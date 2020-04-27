@@ -58,7 +58,7 @@ This is done in order to help us from solving bugs for everyone, so
  framework directly by starting them with `!`, for ex: `!time.sleep(2)` will cause the framework to sleep for 2 seconds.
 * In order to send Ctrl-C or Ctrl-Z signals, simply write in a separate
  line in the input file `CtrlC` or `CtrlZ` respectively.
-*Also added to the framework is my_sleep.c, which is compiled during
+* Also added to the framework is my_sleep.c, which is compiled during
  setup and copied to the test dir. It is run by: `my_sleep <n>` where n
   is the number of seconds it will sleep, printing the time that has
    passed every two seconds. 
