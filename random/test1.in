@@ -1,0 +1,77 @@
+pwd
+bg 6
+pwd &
+CtrlC
+CtrlC
+cp /tmp/smash_test/random1.txt /tmp/smash_test/sub1/aqnsmrjfwvfbgbnybdpk
+which nano &
+CtrlZ
+bg 18
+showpid > /tmp/smash_test/sub2/subsub2/arrow.txt
+cp /tmp/smash_test/my_sleep /tmp/smash_test/sub3/cmiwledaizbjvy &
+kill -9 15
+echo RealFruit | base64 | grep smash
+jobs
+CtrlZ
+CtrlZ
+fg 
+chprompt mjehvevouatrrookn
+fg 17
+pwd
+bg  &
+CtrlZ
+cp /tmp/smash_test/my_sleep /tmp/smash_test/sub1/subsub1/hakokwhi > /tmp/smash_test/sub2/subsub2/arrow.txt
+chprompt wlracy | grep smash
+cp /tmp/smash_test/random2.txt /tmp/smash_test/sub3/rrncmmfuyprxzkswze & | grep smash
+jobs
+bg 15
+bg 10 &
+cp /tmp/smash_test/my_sleep /tmp/smash_test/sub1/subsub1/last/lllfbewovxzfjntj
+jobs &
+jobs
+showpid
+kill -5 12
+kill -4 7
+kill -32 4
+bg 9 &
+cp /tmp/smash_test/random2.txt /tmp/smash_test/sub1/subsub1/last/rfldcihmkrvptwepfw
+pwd &
+fg 5
+cd -
+CtrlC
+kill -1 16
+CtrlZ
+CtrlZ
+CtrlC
+kill -2 9
+cp /tmp/smash_test/my_sleep /tmp/smash_test/sub1/hhpiseabllypthygp | grep smash
+kill -30 2
+showpid
+which nano |& grep smash
+bg 
+cp /tmp/smash_test/random2.txt /tmp/smash_test/sub1/uyupfzzivz
+cd /tmp/smash_test/sub1/subsub1
+echo 6
+cp /tmp/smash_test/random2.txt /tmp/smash_test/sub3/hxgrxetwzd & > /tmp/smash_test/sub1/arrow.txt
+cp /tmp/smash_test/random2.txt /tmp/smash_test/sub1/subsub1/pwquqowrcdekarojq
+cd /tmp/smash_test/sub1/subsub1/last
+cp /tmp/smash_test/random1.txt /tmp/smash_test/sub1/subsub1/last/eakgnqlcalmtpouu & |& grep smash
+cd /tmp/smash_test/sub2/subsub2 |& grep smash
+bg 
+jobs
+pwd >> /tmp/smash_test/doesntexit/double.txt
+fg 
+CtrlZ
+CtrlC
+echo 6
+echo RealFruit | base64
+kill -27 8
+fg 
+CtrlZ
+jobs
+cd /tmp/smash_test/sub1/subsub1
+CtrlC
+cd /tmp/smash_test/sub3
+CtrlZ
+CtrlC
+quit kill

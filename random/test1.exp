@@ -1,0 +1,62 @@
+smash> /tmp/smash_test
+smash> smash error: bg: job-id 6 does not exist
+smash> /tmp/smash_test
+smash> smash: /tmp/smash_test/random1.txt was copied to /tmp/smash_test/sub1/aqnsmrjfwvfbgbnybdpk
+smash: got ctrl-C
+smash: got ctrl-C
+smash: got ctrl-C
+smash: got ctrl-C
+smash> smash> /bin/nano
+smash: got ctrl-Z
+smash error: bg: job-id 18 does not exist
+smash> smash> smash> smash: /tmp/smash_test/my_sleep was copied to /tmp/smash_test/sub3/cmiwledaizbjvy
+smash error: kill: job-id 15 does not exist
+smash> smash> smash> smash: got ctrl-Z
+smash: got ctrl-Z
+smash error: fg: jobs list is empty
+smash> mjehvevouatrrookn> smash error: fg: job-id 17 does not exist
+mjehvevouatrrookn> /tmp/smash_test
+mjehvevouatrrookn> smash error: bg: there is no stopped jobs to resume
+mjehvevouatrrookn> smash: got ctrl-Z
+mjehvevouatrrookn> wlracy> cp: invalid arguments
+wlracy> wlracy> smash error: bg: job-id 15 does not exist
+wlracy> smash error: bg: job-id 10 does not exist
+wlracy> smash: /tmp/smash_test/my_sleep was copied to /tmp/smash_test/sub1/subsub1/last/lllfbewovxzfjntj
+wlracy> wlracy> wlracy> smash pid is \d+
+wlracy> smash error: kill: job-id 12 does not exist
+wlracy> smash error: kill: job-id 7 does not exist
+wlracy> smash error: kill: job-id 4 does not exist
+wlracy> smash error: bg: job-id 9 does not exist
+wlracy> smash: /tmp/smash_test/random2.txt was copied to /tmp/smash_test/sub1/subsub1/last/rfldcihmkrvptwepfw
+wlracy> /tmp/smash_test
+wlracy> smash error: fg: job-id 5 does not exist
+wlracy> smash error: cd: OLDPWD not set
+wlracy> smash: got ctrl-C
+smash error: kill: job-id 16 does not exist
+wlracy> smash: got ctrl-Z
+smash: got ctrl-Z
+smash: got ctrl-C
+smash error: kill: job-id 9 does not exist
+wlracy> smash: /tmp/smash_test/my_sleep was copied to /tmp/smash_test/sub1/hhpiseabllypthygp
+wlracy> smash error: kill: job-id 2 does not exist
+wlracy> smash pid is \d+
+wlracy> /bin/nano
+wlracy> smash error: bg: there is no stopped jobs to resume
+wlracy> smash: /tmp/smash_test/random2.txt was copied to /tmp/smash_test/sub1/uyupfzzivz
+wlracy> wlracy> 6
+wlracy> cp: invalid arguments
+wlracy> smash: /tmp/smash_test/random2.txt was copied to /tmp/smash_test/sub1/subsub1/pwquqowrcdekarojq
+wlracy> wlracy> wlracy> wlracy> smash error: bg: there is no stopped jobs to resume
+wlracy> wlracy> smash error: open failed: No such file or directory
+wlracy> smash error: fg: jobs list is empty
+wlracy> 6
+smash: got ctrl-Z
+smash: got ctrl-C
+wlracy> UmVhbEZydWl0Cg==
+wlracy> smash error: kill: job-id 8 does not exist
+wlracy> smash error: fg: jobs list is empty
+wlracy> smash: got ctrl-Z
+wlracy> wlracy> smash: got ctrl-C
+wlracy> smash: sending SIGKILL signal to 0 jobs:
+smash: got ctrl-Z
+smash: got ctrl-C

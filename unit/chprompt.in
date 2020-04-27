@@ -1,0 +1,12 @@
+chprompt Jeffry_Epstein_didn’t_kill_himself
+chprompt test1
+chprompt test2
+chprompt
+chprompt
+chprompt test2
+chprompt test2
+chprompt test2
+# Shoud be new and not test2
+chprompt new test2
+chprompt
+quit

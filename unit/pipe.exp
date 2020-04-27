@@ -1,0 +1,85 @@
+smash> cat: test_src_1.txt: No such file or directory
+smash> cat: test_src_1: No such file or directory
+smash> cat: test_src_1: No such file or directory
+smash> cat: test_src_1: No such file or directory
+smash> cat: test_src_1: No such file or directory
+smash> smash> smash: got ctrl-Z
+smash: got ctrl-Z
+smash: process \d+ was stopped
+smash> smash: got ctrl-Z
+smash: process \d+ was stopped
+smash> smash> \[1\] sleep 1 | sleep 10 : \d+ \d+ secs \(stopped\)
+\[2\] sleep 10 | sleep 11 : \d+ \d+ secs \(stopped\)
+\[3\] sleep 2 | sleep 4 & : \d+ \d+ secs
+smash> \[1\] sleep 1 | sleep 10 : \d+ \d+ secs \(stopped\)
+\[2\] sleep 10 | sleep 11 : \d+ \d+ secs \(stopped\)
+\[3\] sleep 2 | sleep 4 & : \d+ \d+ secs
+smash> \[1\] sleep 1 | sleep 10 : \d+ \d+ secs \(stopped\)
+\[2\] sleep 10 | sleep 11 : \d+ \d+ secs \(stopped\)
+\[3\] sleep 2 | sleep 4 & : \d+ \d+ secs
+smash> \[1\] sleep 1 | sleep 10 : \d+ \d+ secs \(stopped\)
+\[2\] sleep 10 | sleep 11 : \d+ \d+ secs \(stopped\)
+smash> smash> \[1\] sleep 1 | sleep 10 : \d+ \d+ secs \(stopped\)
+\[2\] sleep 10 | sleep 11 : \d+ \d+ secs \(stopped\)
+\[3\] sleep 4 | sleep 2 & : \d+ \d+ secs
+smash> \[1\] sleep 1 | sleep 10 : \d+ \d+ secs \(stopped\)
+\[2\] sleep 10 | sleep 11 : \d+ \d+ secs \(stopped\)
+\[3\] sleep 4 | sleep 2 & : \d+ \d+ secs
+smash> \[1\] sleep 1 | sleep 10 : \d+ \d+ secs \(stopped\)
+\[2\] sleep 10 | sleep 11 : \d+ \d+ secs \(stopped\)
+\[3\] sleep 4 | sleep 2 & : \d+ \d+ secs
+smash> \[1\] sleep 1 | sleep 10 : \d+ \d+ secs \(stopped\)
+\[2\] sleep 10 | sleep 11 : \d+ \d+ secs \(stopped\)
+smash> smash> my_sleep
+random1.txt
+random2.txt
+sub1
+sub2
+sub3
+smash> 
+smash> 
+smash: got ctrl-Z
+smash: got ctrl-Z
+smash: process \d+ was stopped
+smash> smash> 
+\[1\] sleep 1 | sleep 10 : \d+ \d+ secs \(stopped\)
+\[2\] sleep 10 | sleep 11 : \d+ \d+ secs \(stopped\)
+\[3\] ./my_sleep 8 | echo : \d+ \d+ secs \(stopped\)
+\[4\] ./my_sleep 8 | echo & : \d+ \d+ secs
+smash> \[1\] sleep 1 | sleep 10 : \d+ \d+ secs \(stopped\)
+\[2\] sleep 10 | sleep 11 : \d+ \d+ secs \(stopped\)
+\[3\] ./my_sleep 8 | echo : \d+ \d+ secs \(stopped\)
+smash> smash> 
+\[1\] sleep 1 | sleep 10 : \d+ \d+ secs \(stopped\)
+\[2\] sleep 10 | sleep 11 : \d+ \d+ secs \(stopped\)
+\[3\] ./my_sleep 8 | echo : \d+ \d+ secs \(stopped\)
+\[4\] ./my_sleep 8 | echo & : \d+ \d+ secs
+smash> \[1\] sleep 1 | sleep 10 : \d+ \d+ secs \(stopped\)
+\[2\] sleep 10 | sleep 11 : \d+ \d+ secs \(stopped\)
+\[3\] ./my_sleep 8 | echo : \d+ \d+ secs \(stopped\)
+\[4\] ./my_sleep 8 | echo & : \d+ \d+ secs
+smash> signal number 9 was sent to pid \d+
+smash> \[2\] sleep 10 | sleep 11 : \d+ \d+ secs \(stopped\)
+\[3\] ./my_sleep 8 | echo : \d+ \d+ secs \(stopped\)
+\[4\] ./my_sleep 8 | echo & : \d+ \d+ secs
+smash> smashsmash> /tmp/smash> \[2\] ssmash> smash> smash error: kill: job-id 1 does not exist
+smash> signasmash> signasmash> signasmash> signasmash> smash error: kill: job-id 6 does not exist
+smash> smash> 
+./my_sleep 8 | echo & : \d+
+smash: got ctrl-Z
+smash: process \d+ was stopped
+smash> ./my_sleep 8 | echo & : \d+
+smash: got ctrl-C
+smash: process \d+ was killed
+smash> smash> 
+smash: got ctrl-Z
+smash: process \d+ was stopped
+smash> ./my_sleep 4 | echo : \d+
+smash> smash> cat: nsmash> smash> smash> smash error: cd: too many arguments
+smash> smash error: kill: job-id 30 does not exist
+smash> smash error: kill: invalid arguments
+smash> smash error: kill: invalid arguments
+smash> smash> smash error: fg: jobs list is empty
+smash> smash error: fg: job-id 1 does not exist
+smash> smash error: fg: invalid arguments
+smash> smash> smash: sending SIGKILL signal 

@@ -1,0 +1,43 @@
+timeout 3 ./mysleep 5
+!time.sleep(4)
+# Make sure we didnt kill anyone
+CtrlC
+ps | grep sleep
+jobs
+timeout 3 ./mysleep 5
+!time.sleep(4)
+# Make sure we didnt kill anyone
+CtrlZ
+ps | grep sleep
+jobs
+# Verify we dont print alarm
+timeout 6 ./my_sleep 4
+!time.sleep(5)
+CtrlZ
+jobs
+timeout 5 ./my_sleep 10 &
+!time.sleep(1)
+timeout 9 ./my_sleep 20 &
+!time.sleep(9)
+timeout 7 ./my_sleep 10&
+!time.sleep(1)
+timeout 3 ./my_sleep 20&
+!time.sleep(7)
+CtrlC
+timeout 3 ./my_sleep 20&
+bg
+CtrlZ
+bg
+!time.sleep(4)
+jobs
+timeout 3 ./my_sleep 20&
+fg
+CtrlZ
+bg
+!time.sleep(4)
+jobs
+timeout 3 ./my_sleep 20&
+fg
+CtrlC
+jobs
+quit

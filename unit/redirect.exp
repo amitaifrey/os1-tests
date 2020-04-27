@@ -1,0 +1,156 @@
+smash> my_sleep
+random1.txt
+random2.txt
+sub1
+sub2
+sub3
+smash> smash> test_redirect
+smash> smash> again_redirect
+smash> smash> again_redirect
+test_redirect
+smash> smash> smash pid is \d+
+smash> smash> smash pid is \d+
+smash pid is \d+
+smash> smash> smash pid is \d+
+smash> mypid
+my_sleep
+new
+random1.txt
+random2.txt
+sub1
+sub2
+sub3
+smash> smash> smash> \[1\] sleep 100& : \d+ \d+ secs
+smash> smash error: kill: invalid arguments
+smash> smash> smash error: kill: invalid arguments
+smash> smash> k
+mypid
+my_sleep
+new
+random1.txt
+random2.txt
+s
+sub1
+sub2
+sub3
+t
+smash> smash> k
+mypid
+my_sleep
+new
+p
+random1.txt
+random2.txt
+s
+sub1
+sub2
+sub3
+t
+smash> k
+mypid
+my_sleep
+new
+p
+random1.txt
+random2.txt
+s
+sub1
+sub2
+sub3
+t
+smash> smash error: open failed: No such file or directory
+smash> smash error: open failed: No such file or directory
+smash> again_redirect
+test_redirect
+smash> smash> smash error: open failed: Permission denied
+smash> smash> k
+mypid
+my_sleep
+p
+random1.txt
+random2.txt
+s
+sub1
+sub2
+sub3
+t
+smash> smash> k
+mypid
+my_sleep
+new
+p
+random1.txt
+random2.txt
+s
+sub1
+sub2
+sub3
+t
+smash> k
+mypid
+my_sleep
+new
+p
+random1.txt
+random2.txt
+s
+sub1
+sub2
+sub3
+t
+smash> smash> smash> k
+mypid
+my_sleep
+new
+p
+random1.txt
+random2.txt
+s
+sub1
+sub2
+sub3
+t
+smash> k
+mypid
+my_sleep
+new
+p
+random1.txt
+random2.txt
+s
+sub1
+sub2
+sub3
+t
+smash> smash> smash> k
+mypid
+my_sleep
+new
+p
+random1.txt
+random2.txt
+s
+sub1
+sub2
+sub3
+t
+smash> smash> smash> k
+mypid
+my_sleep
+new
+p
+random1.txt
+random2.txt
+s
+sub1
+sub2
+sub3
+t
+test
+smash> smash> 0
+2
+4
+Done: 6
+smash> smash> signal number 9 was sent to pid \d+
+smash> smash> smash: sending SIGKILL signal to 1 jobs:
+\d+: sleep 100&

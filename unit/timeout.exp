@@ -1,0 +1,32 @@
+smash> /bin/bash: ./mysleep: No such file or directory
+smash> smash: got ctrl-C
+smash> smash> /bin/bash: ./mysleep: No such file or directory
+smash> smash: got ctrl-Z
+smash> smash> 0
+2
+Done: 4
+smash> smash: got ctrl-Z
+smash> smash> smash> smash: got an alarm
+smash: timeout 5 ./my_sleep 10 & timed out!
+smash: got an alarm
+smash: timeout 9 ./my_sleep 20 & timed out!
+smash> smash> smash: got an alarm
+smash: timeout 3 ./my_sleep 20& timed out!
+smash: got an alarm
+smash: timeout 7 ./my_sleep 10& timed out!
+smash: got ctrl-C
+smash> smash error: bg: there is no stopped jobs to resume
+smash> smash: got ctrl-Z
+smash error: bg: there is no stopped jobs to resume
+smash> smash: got an alarm
+smash: timeout 3 ./my_sleep 20& timed out!
+smash> smash> timeout 3 ./my_sleep 20& : \d+
+smash: got ctrl-Z
+smash: process \d+ was stopped
+smash> timeout 3 ./my_sleep 20& : \d+
+smash> smash: got an alarm
+smash: timeout 3 ./my_sleep 20& timed out!
+smash> smash> timeout 3 ./my_sleep 20& : \d+
+smash: got ctrl-C
+smash: process \d+ was killed
+smash> smash> 

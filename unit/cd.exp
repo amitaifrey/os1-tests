@@ -1,0 +1,27 @@
+smash> /tmp/smash_test
+smash> smash error: cd: OLDPWD not set
+smash> smash error: cd: OLDPWD not set
+smash> smash error: cd: too many arguments
+smash> /tmp/smash_test
+smash> smash> /tmp/smash_test
+smash> dir1
+my_sleep
+random1.txt
+random2.txt
+sub1
+sub2
+sub3
+smash> smash> /tmp/smash_test/dir1/dir2
+smash> dir3
+smash> smash> /tmp/smash_test
+smash> dir1
+my_sleep
+random1.txt
+random2.txt
+sub1
+sub2
+sub3
+smash> smash> smash> /tmp/smash_test/dir1/dir2/dir3
+smash> smash> /tmp/smash_test/dir1/dir2
+smash> smash> dir2
+smash> 

@@ -1,0 +1,30 @@
+# This tests using also external command for ls, so if you dont see ls output, it might be external command bug, and not cd (but it can be cd)
+# Base dir is /tmp/smash_test
+pwd
+cd -
+cd -
+cd dir1 dir2
+pwd
+mkdir -p dir1/dir2/dir3
+pwd
+ls
+# /tmp/smash_test/dir1/dir2
+cd dir1/dir2
+pwd
+ls
+# /tmp/smash_test/
+cd -
+pwd
+ls
+# /tmp/smash_test/dir1/dir2
+cd -
+# /tmp/smash_test/dir1/dir2/dir3
+cd dir3
+pwd
+# /tmp/smash_test/dir1/dir2
+cd -
+pwd
+# /tmp/smash_test/dir1
+cd ..
+ls
+quit

@@ -1,0 +1,99 @@
+cat test_src_1.txt
+cat test_src_1 | grep 1
+cat test_src_1 | grep a
+# show only 2 lines
+cat test_src_1 | grep -m 2 a
+cat test_src_1 | head -c 10
+sleep 2 | sleep 2
+!time.sleep(3)
+# Verifying the both sleeps are died
+CtrlZ
+sleep 1 | sleep 10
+!time.sleep(3)
+# Kill the second sleep
+CtrlZ
+sleep 10 | sleep 11
+!time.sleep(3)
+# Kill the first sleep
+CtrlZ
+#
+# Now ith &
+#
+sleep 2 | sleep 4 &
+jobs
+!time.sleep(1)
+jobs
+!time.sleep(2)
+jobs
+!time.sleep(2)
+# Should be empty
+jobs
+sleep 4 | sleep 2 &
+jobs
+!time.sleep(1)
+jobs
+!time.sleep(2)
+jobs
+!time.sleep(2)
+# Should be empty
+jobs
+ls | sleep 1
+!time.sleep(2)
+sleep 1 | ls
+!time.sleep(2)
+./my_sleep 8 | echo
+!time.sleep(9)
+CtrlZ
+./my_sleep 8 | echo
+!time.sleep(5)
+CtrlZ
+./my_sleep 8 | echo &
+jobs
+!time.sleep(9)
+jobs
+./my_sleep 8 | echo &
+jobs
+!time.sleep(5)
+jobs
+kill -9 1
+jobs
+# Check internal commands redirection
+showpid | head -c 5
+pwd | head -c 5
+jobs | head -c 5
+sleep 100&
+kill -9 1 | head -c 5
+kill -9 2 | head -c 5
+kill -9 3 | head -c 5
+kill -9 4 | head -c 5
+kill -9 5 | head -c 5
+kill -9 6 | head -c 5
+./my_sleep 8 | echo &
+fg
+!time.sleep(3)
+CtrlZ
+fg
+CtrlC
+jobs
+./my_sleep 4 | echo
+CtrlZ
+bg
+!time.sleep(6)
+jobs
+#
+# stderr
+#
+# verify that we transfer the stderr by truncateing it
+cat not_a_realy_path |& head -c 6
+cd not_a_realy_path |& head -c 6
+cd - |& head -c 6
+cd asdasd asdasd |& head -c 6
+kill -9 30 |& head -c 6
+kill |& head -c 6
+kill asda 1|& head -c 6
+jobs
+fg |& head -c 6
+fg 1 |& head -c 6
+fg sdf |& head -c 6
+
+quit kill | head -c 30

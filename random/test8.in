@@ -1,0 +1,93 @@
+CtrlZ
+cd /tmp/smash_test/doesntexit | grep smash
+chprompt fl
+cd /tmp/smash_test/sub1
+chprompt wkakrbwcedqfftujxiqs &
+fg 20
+chprompt aqdufxgbbmfswdclof
+pwd
+chprompt otlpkgnllyld > /tmp/smash_test/sub1/subsub1/last/arrow.txt
+showpid >> /tmp/smash_test/sub1/subsub1/last/double.txt
+bg 
+fg  &
+CtrlC
+fg 11 &
+CtrlZ
+jobs
+pwd
+CtrlC
+pwd
+cp /tmp/smash_test/my_sleep /tmp/smash_test/doesntexit/qi
+showpid >> /tmp/smash_test/sub1/double.txt
+fg 13 &
+kill -6 19
+echo 6 & |& grep smash
+cp /tmp/smash_test/random2.txt /tmp/smash_test/sub1/subsub1/zrxbkenbzyeflycscloq &
+chprompt cdqtfbvfgspfb &
+cd /tmp/smash_test/sub2/subsub2
+cd /tmp/smash_test/sub3
+chprompt yexvbxsyzjdjwq & > /tmp/smash_test/sub3/arrow.txt
+pwd >> /tmp/smash_test/sub2/double.txt
+jobs
+cp /tmp/smash_test/random1.txt /tmp/smash_test/sub1/xzkptevunjeqcgeaaly
+showpid &
+fg 15 &
+CtrlC
+kill -11 13
+CtrlC
+chprompt voygdpsdaiv | grep smash
+showpid
+jobs |& grep smash
+fg 20
+fg 6
+ls/tmp/smash_test/sub2/subsub2 &
+chprompt s
+CtrlC
+pwd | grep smash
+showpid &
+fg 13
+bg 
+CtrlC
+cp /tmp/smash_test/random2.txt /tmp/smash_test/sub1/ftje
+bg  &
+showpid
+cd /tmp/smash_test/sub2 & >> /tmp/smash_test/doesntexit/double.txt
+CtrlC
+showpid > /tmp/smash_test/sub2/arrow.txt
+CtrlZ
+echo RealFruit | base64 &
+CtrlC
+showpid &
+pwd
+bg 15
+kill -30 12
+pwd & > /tmp/smash_test/sub1/subsub1/last/arrow.txt
+echo RealFruit | base64
+chprompt bxjlttbwh &
+cd /tmp/smash_test/sub2/subsub2 >> /tmp/smash_test/sub1/subsub1/last/double.txt
+echo RealFruit | base64 >> /tmp/smash_test/doesntexit/double.txt
+pwd &
+cp /tmp/smash_test/my_sleep /tmp/smash_test/sub1/subsub1/nqquemakiojoh
+bg 
+which nano
+CtrlC
+jobs
+cp /tmp/smash_test/random1.txt /tmp/smash_test/sub3/cxeiqmgzvrsms
+fg 6
+showpid >> /tmp/smash_test/sub1/subsub1/last/double.txt
+cd /tmp/smash_test/sub1/subsub1 &
+cp /tmp/smash_test/random1.txt /tmp/smash_test/sub1/qmqmcoeneioxxvocxmbb | grep smash
+jobs
+which nano
+CtrlZ
+bg 18
+fg 
+chprompt aczncpdufsaupdygmm
+ls/tmp/smash_test/sub1/subsub1/last
+kill -12 3
+bg  &
+chprompt xvtgwbepyowbgligap
+CtrlZ
+jobs
+bg 
+quit kill

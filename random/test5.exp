@@ -1,0 +1,68 @@
+smash> /tmp/smash_test
+smash> smash: got ctrl-Z
+smash> /tmp/smash_test
+smash> smash: got ctrl-Z
+smash error: fg: job-id 19 does not exist
+smash> smash: got ctrl-Z
+smash> smash> smash pid is \d+
+smash> smash error: cd: OLDPWD not set
+smash> ozpdkqdg> /tmp/smash_test
+ozpdkqdg> smash error: bg: job-id 14 does not exist
+ozpdkqdg> smash error: bg: there is no stopped jobs to resume
+ozpdkqdg> smash pid is \d+
+ozpdkqdg> smash: got ctrl-Z
+qepmubwgknaosaakqktq> smash: got ctrl-Z
+hwxcnleiyetkq> smash error: bg: there is no stopped jobs to resume
+hwxcnleiyetkq> w> smash error: bg: there is no stopped jobs to resume
+w> smash: got ctrl-C
+smash: got ctrl-Z
+smash: got ctrl-C
+wdqepmeaacxgz> smash pid is \d+
+wdqepmeaacxgz> smash error: bg: there is no stopped jobs to resume
+wdqepmeaacxgz> smash: got ctrl-C
+smash: got ctrl-Z
+smash error: bg: there is no stopped jobs to resume
+wdqepmeaacxgz> smash: got ctrl-Z
+wdqepmeaacxgz> smash error: fg: job-id 6 does not exist
+wdqepmeaacxgz> smash error: bg: there is no stopped jobs to resume
+wdqepmeaacxgz> smash error: bg: job-id 19 does not exist
+wdqepmeaacxgz> /tmp/smash_test/sub1/subsub1/last
+wdqepmeaacxgz> smash error: chdir failed: No such file or directory
+wdqepmeaacxgz> smash: got ctrl-Z
+smash error: fg: job-id 3 does not exist
+wdqepmeaacxgz> smash: got ctrl-Z
+smash error: bg: there is no stopped jobs to resume
+wdqepmeaacxgz> smash pid is \d+
+wdqepmeaacxgz> wdqepmeaacxgz> smash: got ctrl-Z
+smash error: bg: job-id 19 does not exist
+wdqepmeaacxgz> smash: got ctrl-C
+smash error: kill: job-id 4 does not exist
+wdqepmeaacxgz> smash: /tmp/smash_test/random1.txt was copied to /tmp/smash_test/sub1/dyrrllaigdfp
+wdqepmeaacxgz> smash error: fg: job-id 18 does not exist
+wdqepmeaacxgz> smash error: fg: jobs list is empty
+wdqepmeaacxgz> wdqepmeaacxgz> smash error: kill: job-id 8 does not exist
+wdqepmeaacxgz> smash error: kill: job-id 15 does not exist
+wdqepmeaacxgz> smash pid is \d+
+smash: got ctrl-Z
+smash: got ctrl-C
+wdqepmeaacxgz> smash: /tmp/smash_test/random2.txt was copied to /tmp/smash_test/sub1/subsub1/last/hyp
+wdqepmeaacxgz> wdqepmeaacxgz> wdqepmeaacxgz> smash: got ctrl-Z
+smash error: fg: job-id 12 does not exist
+wdqepmeaacxgz> wdqepmeaacxgz> smash: /tmp/smash_test/random1.txt was copied to /tmp/smash_test/sub2/subsub2/egkckxgj
+wdqepmeaacxgz> smash error: kill: job-id 14 does not exist
+wdqepmeaacxgz> smash: got ctrl-C
+wdqepmeaacxgz> wdqepmeaacxgz> smash pid is \d+
+wdqepmeaacxgz> smash: got ctrl-C
+wdqepmeaacxgz> smash error: kill: job-id 18 does not exist
+wdqepmeaacxgz> smash error: kill: job-id 4 does not exist
+wdqepmeaacxgz> smash error: chdir failed: No such file or directory
+wdqepmeaacxgz> 6
+wdqepmeaacxgz> smash pid is \d+
+wdqepmeaacxgz> /tmp/smash_test/sub1/subsub1
+wdqepmeaacxgz> /tmp/smash_test/sub1/subsub1
+wdqepmeaacxgz> smash pid is \d+
+wdqepmeaacxgz> smash error: fg: jobs list is empty
+wdqepmeaacxgz> wdqepmeaacxgz> UmVhbEZydWl0Cg==
+wdqepmeaacxgz> kuccbqahffivrfdy> 6
+kuccbqahffivrfdy> smash error: fg: job-id 17 does not exist
+kuccbqahffivrfdy> smash: sending SIGKILL signal to 0 jobs:

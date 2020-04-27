@@ -1,0 +1,364 @@
+smash> smash> smash> smash> smash> smash> smash> smash> \[1\] sleep 100& : \d+ \d+ secs
+\[2\] sleep 200& : \d+ \d+ secs
+\[3\] sleep 300& : \d+ \d+ secs
+\[4\] sleep 400& : \d+ \d+ secs
+\[5\] sleep 20& : \d+ \d+ secs
+\[6\] sleep 600& : \d+ \d+ secs
+\[7\] sleep 700& : \d+ \d+ secs
+smash> smash> smash> \[1\] sleep 100& : \d+ \d+ secs
+\[2\] sleep 200& : \d+ \d+ secs
+\[3\] sleep 300& : \d+ \d+ secs
+\[4\] sleep 400& : \d+ \d+ secs
+\[5\] sleep 20& : \d+ \d+ secs
+\[6\] sleep 600& : \d+ \d+ secs
+\[7\] sleep 700& : \d+ \d+ secs
+\[8\] sleep 800& : \d+ \d+ secs
+\[9\] sleep 900& : \d+ \d+ secs
+smash> signal number 9 was sent to pid \d+
+smash> \[1\] sleep 100& : \d+ \d+ secs
+\[2\] sleep 200& : \d+ \d+ secs
+\[4\] sleep 400& : \d+ \d+ secs
+\[5\] sleep 20& : \d+ \d+ secs
+\[6\] sleep 600& : \d+ \d+ secs
+\[7\] sleep 700& : \d+ \d+ secs
+\[8\] sleep 800& : \d+ \d+ secs
+\[9\] sleep 900& : \d+ \d+ secs
+smash> smash> \[1\] sleep 100& : \d+ \d+ secs
+\[2\] sleep 200& : \d+ \d+ secs
+\[4\] sleep 400& : \d+ \d+ secs
+\[5\] sleep 20& : \d+ \d+ secs
+\[6\] sleep 600& : \d+ \d+ secs
+\[7\] sleep 700& : \d+ \d+ secs
+\[8\] sleep 800& : \d+ \d+ secs
+\[9\] sleep 900& : \d+ \d+ secs
+\[10\] sleep \d+& : \d+ \d+ secs
+smash> signal number 9 was sent to pid \d+
+smash> \[1\] sleep 100& : \d+ \d+ secs
+\[2\] sleep 200& : \d+ \d+ secs
+\[4\] sleep 400& : \d+ \d+ secs
+\[5\] sleep 20& : \d+ \d+ secs
+\[6\] sleep 600& : \d+ \d+ secs
+\[7\] sleep 700& : \d+ \d+ secs
+\[8\] sleep 800& : \d+ \d+ secs
+\[9\] sleep 900& : \d+ \d+ secs
+smash> smash> \[1\] sleep 100& : \d+ \d+ secs
+\[2\] sleep 200& : \d+ \d+ secs
+\[4\] sleep 400& : \d+ \d+ secs
+\[5\] sleep 20& : \d+ \d+ secs
+\[6\] sleep 600& : \d+ \d+ secs
+\[7\] sleep 700& : \d+ \d+ secs
+\[8\] sleep 800& : \d+ \d+ secs
+\[9\] sleep 900& : \d+ \d+ secs
+\[10\] sleep \d+& : \d+ \d+ secs
+smash> sleep \d+& : \d+
+smash: got ctrl-Z
+smash: process \d+ was stopped
+smash> \[1\] sleep 100& : \d+ \d+ secs
+\[2\] sleep 200& : \d+ \d+ secs
+\[4\] sleep 400& : \d+ \d+ secs
+\[5\] sleep 20& : \d+ \d+ secs
+\[6\] sleep 600& : \d+ \d+ secs
+\[7\] sleep 700& : \d+ \d+ secs
+\[8\] sleep 800& : \d+ \d+ secs
+\[9\] sleep 900& : \d+ \d+ secs
+\[10\] sleep \d+& : \d+ \d+ secs \(stopped\)
+smash> sleep \d+& : \d+
+smash: got ctrl-Z
+smash: process \d+ was stopped
+smash> \[1\] sleep 100& : \d+ \d+ secs
+\[2\] sleep 200& : \d+ \d+ secs
+\[4\] sleep 400& : \d+ \d+ secs
+\[5\] sleep 20& : \d+ \d+ secs
+\[6\] sleep 600& : \d+ \d+ secs
+\[7\] sleep 700& : \d+ \d+ secs
+\[8\] sleep 800& : \d+ \d+ secs
+\[9\] sleep 900& : \d+ \d+ secs
+\[10\] sleep \d+& : \d+ \d+ secs \(stopped\)
+smash> sleep \d+& : \d+
+smash: got ctrl-Z
+smash: process \d+ was stopped
+smash> \[1\] sleep 100& : \d+ \d+ secs
+\[2\] sleep 200& : \d+ \d+ secs
+\[4\] sleep 400& : \d+ \d+ secs
+\[5\] sleep 20& : \d+ \d+ secs
+\[6\] sleep 600& : \d+ \d+ secs
+\[7\] sleep 700& : \d+ \d+ secs
+\[8\] sleep 800& : \d+ \d+ secs
+\[9\] sleep 900& : \d+ \d+ secs
+\[10\] sleep \d+& : \d+ \d+ secs \(stopped\)
+smash> sleep \d+& : \d+
+smash: got ctrl-Z
+smash: process \d+ was stopped
+smash> \[1\] sleep 100& : \d+ \d+ secs
+\[2\] sleep 200& : \d+ \d+ secs
+\[4\] sleep 400& : \d+ \d+ secs
+\[5\] sleep 20& : \d+ \d+ secs
+\[6\] sleep 600& : \d+ \d+ secs
+\[7\] sleep 700& : \d+ \d+ secs
+\[8\] sleep 800& : \d+ \d+ secs
+\[9\] sleep 900& : \d+ \d+ secs
+\[10\] sleep \d+& : \d+ \d+ secs \(stopped\)
+smash> \[1\] sleep 100& : \d+ \d+ secs
+\[2\] sleep 200& : \d+ \d+ secs
+\[4\] sleep 400& : \d+ \d+ secs
+\[5\] sleep 20& : \d+ \d+ secs
+\[6\] sleep 600& : \d+ \d+ secs
+\[7\] sleep 700& : \d+ \d+ secs
+\[8\] sleep 800& : \d+ \d+ secs
+\[9\] sleep 900& : \d+ \d+ secs
+\[10\] sleep \d+& : \d+ \d+ secs \(stopped\)
+smash: got ctrl-C
+smash> smash: got ctrl-Z
+smash: process \d+ was stopped
+smash> \[1\] sleep 100& : \d+ \d+ secs
+\[2\] sleep 200& : \d+ \d+ secs
+\[4\] sleep 400& : \d+ \d+ secs
+\[5\] sleep 20& : \d+ \d+ secs
+\[6\] sleep 600& : \d+ \d+ secs
+\[7\] sleep 700& : \d+ \d+ secs
+\[8\] sleep 800& : \d+ \d+ secs
+\[9\] sleep 900& : \d+ \d+ secs
+\[10\] sleep \d+& : \d+ \d+ secs \(stopped\)
+\[11\] sleep \d+ : \d+ \d+ secs \(stopped\)
+smash> sleep \d+ : \d+
+smash> \[1\] sleep 100& : \d+ \d+ secs
+\[2\] sleep 200& : \d+ \d+ secs
+\[4\] sleep 400& : \d+ \d+ secs
+\[5\] sleep 20& : \d+ \d+ secs
+\[6\] sleep 600& : \d+ \d+ secs
+\[7\] sleep 700& : \d+ \d+ secs
+\[8\] sleep 800& : \d+ \d+ secs
+\[9\] sleep 900& : \d+ \d+ secs
+\[10\] sleep \d+& : \d+ \d+ secs \(stopped\)
+\[11\] sleep \d+ : \d+ \d+ secs
+smash> smash: got ctrl-C
+smash: process \d+ was killed
+smash> smash> \[1\] sleep 100& : \d+ \d+ secs
+\[2\] sleep 200& : \d+ \d+ secs
+\[4\] sleep 400& : \d+ \d+ secs
+\[5\] sleep 20& : \d+ \d+ secs
+\[6\] sleep 600& : \d+ \d+ secs
+\[7\] sleep 700& : \d+ \d+ secs
+\[8\] sleep 800& : \d+ \d+ secs
+\[9\] sleep 900& : \d+ \d+ secs
+\[10\] sleep \d+& : \d+ \d+ secs \(stopped\)
+\[11\] sleep \d+ : \d+ \d+ secs
+smash: got ctrl-C
+smash: got ctrl-C
+smash: got ctrl-Z
+smash: got ctrl-Z
+smash> smash: got ctrl-Z
+smash: process \d+ was stopped
+smash> smash: got ctrl-Z
+smash: process \d+ was stopped
+smash> smash: got ctrl-Z
+smash: process \d+ was stopped
+smash> sleep \d+ : \d+
+smash: got ctrl-Z
+smash: process \d+ was stopped
+smash> sleep \d+ : \d+
+smash: got ctrl-Z
+smash: process \d+ was stopped
+smash> sleep \d+ : \d+
+smash: got ctrl-Z
+smash: process \d+ was stopped
+smash> \[1\] sleep 100& : \d+ \d+ secs
+\[2\] sleep 200& : \d+ \d+ secs
+\[4\] sleep 400& : \d+ \d+ secs
+\[5\] sleep 20& : \d+ \d+ secs
+\[6\] sleep 600& : \d+ \d+ secs
+\[7\] sleep 700& : \d+ \d+ secs
+\[8\] sleep 800& : \d+ \d+ secs
+\[9\] sleep 900& : \d+ \d+ secs
+\[10\] sleep \d+& : \d+ \d+ secs \(stopped\)
+\[11\] sleep \d+ : \d+ \d+ secs
+\[12\] sleep \d+ : \d+ \d+ secs \(stopped\)
+\[13\] sleep \d+ : \d+ \d+ secs \(stopped\)
+\[14\] sleep \d+ : \d+ \d+ secs \(stopped\)
+smash> sleep \d+ : \d+
+smash: got ctrl-Z
+smash: process \d+ was stopped
+smash> sleep \d+ : \d+
+smash: got ctrl-C
+smash: process \d+ was killed
+smash> smash error: fg: job-id 20 does not exist
+smash> smash error: fg: job-id 21 does not exist
+smash> smash error: fg: invalid arguments
+smash> \[1\] sleep 100& : \d+ \d+ secs
+\[2\] sleep 200& : \d+ \d+ secs
+\[4\] sleep 400& : \d+ \d+ secs
+\[5\] sleep 20& : \d+ \d+ secs
+\[6\] sleep 600& : \d+ \d+ secs
+\[7\] sleep 700& : \d+ \d+ secs
+\[8\] sleep 800& : \d+ \d+ secs
+\[9\] sleep 900& : \d+ \d+ secs
+\[10\] sleep \d+& : \d+ \d+ secs \(stopped\)
+\[12\] sleep \d+ : \d+ \d+ secs \(stopped\)
+\[13\] sleep \d+ : \d+ \d+ secs \(stopped\)
+\[14\] sleep \d+ : \d+ \d+ secs \(stopped\)
+smash> sleep \d+ : \d+
+smash> smash error: bg: job-id 20 does not exist
+smash> smash error: bg: invalid arguments
+smash> \[1\] sleep 100& : \d+ \d+ secs
+\[2\] sleep 200& : \d+ \d+ secs
+\[4\] sleep 400& : \d+ \d+ secs
+\[5\] sleep 20& : \d+ \d+ secs
+\[6\] sleep 600& : \d+ \d+ secs
+\[7\] sleep 700& : \d+ \d+ secs
+\[8\] sleep 800& : \d+ \d+ secs
+\[9\] sleep 900& : \d+ \d+ secs
+\[10\] sleep \d+& : \d+ \d+ secs \(stopped\)
+\[12\] sleep \d+ : \d+ \d+ secs
+\[13\] sleep \d+ : \d+ \d+ secs \(stopped\)
+\[14\] sleep \d+ : \d+ \d+ secs \(stopped\)
+smash> smash error: bg: job-id 7 is already running in the background
+smash> smash error: bg: job-id 8 is already running in the background
+smash> \[1\] sleep 100& : \d+ \d+ secs
+\[2\] sleep 200& : \d+ \d+ secs
+\[4\] sleep 400& : \d+ \d+ secs
+\[5\] sleep 20& : \d+ \d+ secs
+\[6\] sleep 600& : \d+ \d+ secs
+\[7\] sleep 700& : \d+ \d+ secs
+\[8\] sleep 800& : \d+ \d+ secs
+\[9\] sleep 900& : \d+ \d+ secs
+\[10\] sleep \d+& : \d+ \d+ secs \(stopped\)
+\[12\] sleep \d+ : \d+ \d+ secs
+\[13\] sleep \d+ : \d+ \d+ secs \(stopped\)
+\[14\] sleep \d+ : \d+ \d+ secs \(stopped\)
+smash> signal number 9 was sent to pid \d+
+smash> smash error: kill: job-id 1 does not exist
+smash> \[2\] sleep 200& : \d+ \d+ secs
+\[4\] sleep 400& : \d+ \d+ secs
+\[5\] sleep 20& : \d+ \d+ secs
+\[6\] sleep 600& : \d+ \d+ secs
+\[7\] sleep 700& : \d+ \d+ secs
+\[8\] sleep 800& : \d+ \d+ secs
+\[9\] sleep 900& : \d+ \d+ secs
+\[10\] sleep \d+& : \d+ \d+ secs \(stopped\)
+\[12\] sleep \d+ : \d+ \d+ secs
+\[13\] sleep \d+ : \d+ \d+ secs \(stopped\)
+\[14\] sleep \d+ : \d+ \d+ secs \(stopped\)
+smash> signal number 9 was sent to pid \d+
+smash> signal number 9 was sent to pid \d+
+smash> smash error: fg: job-id 4 does not exist
+smash> smash error: bg: job-id 2 does not exist
+smash> smash error: fg: job-id 1 does not exist
+smash> \[5\] sleep 20& : \d+ \d+ secs
+\[6\] sleep 600& : \d+ \d+ secs
+\[7\] sleep 700& : \d+ \d+ secs
+\[8\] sleep 800& : \d+ \d+ secs
+\[9\] sleep 900& : \d+ \d+ secs
+\[10\] sleep \d+& : \d+ \d+ secs \(stopped\)
+\[12\] sleep \d+ : \d+ \d+ secs
+\[13\] sleep \d+ : \d+ \d+ secs \(stopped\)
+\[14\] sleep \d+ : \d+ \d+ secs \(stopped\)
+smash> smash> \[5\] sleep 20& : \d+ \d+ secs
+\[6\] sleep 600& : \d+ \d+ secs
+\[7\] sleep 700& : \d+ \d+ secs
+\[8\] sleep 800& : \d+ \d+ secs
+\[9\] sleep 900& : \d+ \d+ secs
+\[10\] sleep \d+& : \d+ \d+ secs \(stopped\)
+\[12\] sleep \d+ : \d+ \d+ secs
+\[13\] sleep \d+ : \d+ \d+ secs \(stopped\)
+\[14\] sleep \d+ : \d+ \d+ secs \(stopped\)
+\[15\] sleep 3& : \d+ \d+ secs
+smash> \[6\] sleep 600& : \d+ \d+ secs
+\[7\] sleep 700& : \d+ \d+ secs
+\[8\] sleep 800& : \d+ \d+ secs
+\[9\] sleep 900& : \d+ \d+ secs
+\[10\] sleep \d+& : \d+ \d+ secs \(stopped\)
+\[12\] sleep \d+ : \d+ \d+ secs
+\[13\] sleep \d+ : \d+ \d+ secs \(stopped\)
+\[14\] sleep \d+ : \d+ \d+ secs \(stopped\)
+smash> \[6\] sleep 600& : \d+ \d+ secs
+\[7\] sleep 700& : \d+ \d+ secs
+\[8\] sleep 800& : \d+ \d+ secs
+\[9\] sleep 900& : \d+ \d+ secs
+\[10\] sleep \d+& : \d+ \d+ secs \(stopped\)
+\[12\] sleep \d+ : \d+ \d+ secs
+\[13\] sleep \d+ : \d+ \d+ secs \(stopped\)
+\[14\] sleep \d+ : \d+ \d+ secs \(stopped\)
+smash> \[6\] sleep 600& : \d+ \d+ secs
+\[7\] sleep 700& : \d+ \d+ secs
+\[8\] sleep 800& : \d+ \d+ secs
+\[9\] sleep 900& : \d+ \d+ secs
+\[10\] sleep \d+& : \d+ \d+ secs \(stopped\)
+\[12\] sleep \d+ : \d+ \d+ secs
+\[13\] sleep \d+ : \d+ \d+ secs \(stopped\)
+\[14\] sleep \d+ : \d+ \d+ secs \(stopped\)
+smash> \[6\] sleep 600& : \d+ \d+ secs
+\[7\] sleep 700& : \d+ \d+ secs
+\[8\] sleep 800& : \d+ \d+ secs
+\[9\] sleep 900& : \d+ \d+ secs
+\[10\] sleep \d+& : \d+ \d+ secs \(stopped\)
+\[12\] sleep \d+ : \d+ \d+ secs
+\[13\] sleep \d+ : \d+ \d+ secs \(stopped\)
+\[14\] sleep \d+ : \d+ \d+ secs \(stopped\)
+smash> sleep \d+ : \d+
+smash: got ctrl-Z
+smash: process \d+ was stopped
+smash> \[6\] sleep 600& : \d+ \d+ secs
+\[7\] sleep 700& : \d+ \d+ secs
+\[8\] sleep 800& : \d+ \d+ secs
+\[9\] sleep 900& : \d+ \d+ secs
+\[10\] sleep \d+& : \d+ \d+ secs \(stopped\)
+\[12\] sleep \d+ : \d+ \d+ secs
+\[13\] sleep \d+ : \d+ \d+ secs \(stopped\)
+\[14\] sleep \d+ : \d+ \d+ secs \(stopped\)
+smash> sleep \d+ : \d+
+smash: got ctrl-Z
+smash: process \d+ was stopped
+smash> \[6\] sleep 600& : \d+ \d+ secs
+\[7\] sleep 700& : \d+ \d+ secs
+\[8\] sleep 800& : \d+ \d+ secs
+\[9\] sleep 900& : \d+ \d+ secs
+\[10\] sleep \d+& : \d+ \d+ secs \(stopped\)
+\[12\] sleep \d+ : \d+ \d+ secs
+\[13\] sleep \d+ : \d+ \d+ secs \(stopped\)
+\[14\] sleep \d+ : \d+ \d+ secs \(stopped\)
+smash> sleep \d+ : \d+
+smash: got ctrl-Z
+smash: process \d+ was stopped
+smash> \[6\] sleep 600& : \d+ \d+ secs
+\[7\] sleep 700& : \d+ \d+ secs
+\[8\] sleep 800& : \d+ \d+ secs
+\[9\] sleep 900& : \d+ \d+ secs
+\[10\] sleep \d+& : \d+ \d+ secs \(stopped\)
+\[12\] sleep \d+ : \d+ \d+ secs
+\[13\] sleep \d+ : \d+ \d+ secs \(stopped\)
+\[14\] sleep \d+ : \d+ \d+ secs \(stopped\)
+smash> smash> \[6\] sleep 600& : \d+ \d+ secs
+\[7\] sleep 700& : \d+ \d+ secs
+\[8\] sleep 800& : \d+ \d+ secs
+\[9\] sleep 900& : \d+ \d+ secs
+\[10\] sleep \d+& : \d+ \d+ secs \(stopped\)
+\[12\] sleep \d+ : \d+ \d+ secs
+\[13\] sleep \d+ : \d+ \d+ secs \(stopped\)
+\[14\] sleep \d+ : \d+ \d+ secs \(stopped\)
+\[15\] sleep 777& : \d+ \d+ secs
+smash> smash: got ctrl-C
+smash: process \d+ was killed
+smash> smash: got ctrl-Z
+smash: process \d+ was stopped
+smash> sleep 888 : \d+
+smash> \[6\] sleep 600& : \d+ \d+ secs
+\[7\] sleep 700& : \d+ \d+ secs
+\[8\] sleep 800& : \d+ \d+ secs
+\[9\] sleep 900& : \d+ \d+ secs
+\[10\] sleep \d+& : \d+ \d+ secs \(stopped\)
+\[12\] sleep \d+ : \d+ \d+ secs
+\[13\] sleep \d+ : \d+ \d+ secs \(stopped\)
+\[14\] sleep \d+ : \d+ \d+ secs \(stopped\)
+\[15\] sleep 777& : \d+ \d+ secs
+\[16\] sleep 888 : \d+ \d+ secs
+smash> smash: sending SIGKILL signal to 10 jobs:
+\d+: sleep 600&
+\d+: sleep 700&
+\d+: sleep 800&
+\d+: sleep 900&
+\d+: sleep \d+&
+\d+: sleep \d+
+\d+: sleep \d+
+\d+: sleep \d+
+\d+: sleep 777&
+\d+: sleep 888

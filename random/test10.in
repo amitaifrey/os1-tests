@@ -1,0 +1,76 @@
+jobs
+kill -9 16
+cd /tmp/smash_test/sub3 |& grep smash
+bg 
+cp /tmp/smash_test/my_sleep /tmp/smash_test/sub1/subsub1/last/vdcfetjrcotti
+jobs
+ls/tmp/smash_test/doesntexit &
+chprompt eelczy >> /tmp/smash_test/sub3/double.txt
+chprompt z >> /tmp/smash_test/sub2/double.txt
+showpid |& grep smash
+chprompt vqerwbsx
+showpid
+bg 
+kill -5 14
+bg  &
+bg 
+cd /tmp/smash_test/sub2/subsub2 &
+kill -6 4
+CtrlC
+CtrlC
+bg 
+ls/tmp/smash_test/sub2/subsub2
+showpid &
+kill -16 19
+pwd &
+CtrlC
+jobs &
+cp /tmp/smash_test/random2.txt /tmp/smash_test/sub1/subsub1/last/ixdzmhlmm
+CtrlC
+fg 4
+kill -30 4
+pwd
+jobs &
+cd /tmp/smash_test/sub2/subsub2
+CtrlC
+bg  &
+cp /tmp/smash_test/my_sleep /tmp/smash_test/doesntexit/trlszq
+kill -7 16
+echo 6 &
+chprompt dpwmpwalhu &
+jobs | grep smash
+showpid
+jobs &
+CtrlZ
+bg  &
+fg 5 &
+bg 3
+jobs
+kill -7 3
+chprompt hwaix > /tmp/smash_test/doesntexit/arrow.txt
+pwd & | grep smash
+fg  &
+jobs &
+CtrlZ
+cd /tmp/smash_test/sub1
+cp /tmp/smash_test/my_sleep /tmp/smash_test/sub1/subsub1/nzohaqgxenijuwnvtam >> /tmp/smash_test/sub2/subsub2/double.txt
+cd /tmp/smash_test/sub2 |& grep smash
+bg 
+jobs & | grep smash
+echo RealFruit | base64
+cp /tmp/smash_test/random1.txt /tmp/smash_test/sub1/wfacqd &
+CtrlZ
+CtrlC
+cd /tmp/smash_test/sub3
+bg 
+bg 9 &
+CtrlZ
+kill -24 11
+kill -2 2
+chprompt vhss & |& grep smash
+pwd
+jobs &
+pwd >> /tmp/smash_test/sub1/double.txt
+showpid
+echo RealFruit | base64
+quit kill

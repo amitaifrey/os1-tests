@@ -1,0 +1,55 @@
+ls
+echo test_redirect> new
+cat new
+echo again_redirect> new
+cat new
+echo test_redirect>> new
+cat new
+showpid > mypid
+cat mypid
+showpid >> mypid
+cat mypid
+showpid > mypid
+cat mypid
+ls
+sleep 100&
+jobs > s
+cat s
+kill 1 > k
+cat k
+kill 10 > t
+cat t
+ls
+ls > p
+cat p
+ls
+ls > /dfgdfg/dfgdfg
+ls >/tmp/smash/test/new
+cat new
+chmod 0 new
+# Should fail
+ls > new
+rm new
+ls
+ls>new
+cat new
+ls
+rm new
+ls> new
+cat new
+ls
+rm new
+ls >new
+cat new
+mkdir test
+ls > test/again
+cat test/again
+./my_sleep 6 > sl
+!time.sleep(7)
+cat sl
+./my_sleep 8 > sl &
+!time.sleep(3)
+kill -9 2
+!time.sleep(1)
+cat sl
+quit kill
