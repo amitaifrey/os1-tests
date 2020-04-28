@@ -29,4 +29,16 @@ smash: timeout 3 ./my_sleep 20& timed out!
 smash> smash> timeout 3 ./my_sleep 20& : \d+
 smash: got ctrl-C
 smash: process \d+ was killed
-smash> smash> 
+smash> smash> smash> smash> smash> smash> \[1\] timeout 5 sleep 100& : \d+ \d+ secs
+\[2\] timeout 10 sleep 200& : \d+ \d+ secs
+\[3\] timeout 2 sleep 300& : \d+ \d+ secs
+\[4\] timeout 7 sleep 400& : \d+ \d+ secs
+smash> smash: got an alarm
+smash: timeout 2 sleep 300& timed out!
+smash: got an alarm
+smash: timeout 5 sleep 100& timed out!
+smash: got an alarm
+smash: timeout 7 sleep 400& timed out!
+smash: got an alarm
+smash: timeout 10 sleep 200& timed out!
+smash> smash: sending SIGKILL signal to 0 jobs:

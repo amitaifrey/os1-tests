@@ -1,19 +1,19 @@
 smash> smash> smash error: fg: job-id 2 does not exist
 smash> smash error: fg: jobs list is empty
-smash> /tmp/smash_test
-smash: got ctrl-Z
+smash> smash: got ctrl-Z
+/tmp/smash_test
 smash> drzlrzrmpjhubsnzorrk> /tmp/smash_test
 drzlrzrmpjhubsnzorrk> drzlrzrmpjhubsnzorrk> smash: got ctrl-Z
 smash error: fg: jobs list is empty
-drzlrzrmpjhubsnzorrk> smash pid is \d+
-smash: got ctrl-Z
+drzlrzrmpjhubsnzorrk> smash: got ctrl-Z
+smash pid is \d+
 drzlrzrmpjhubsnzorrk> /tmp/smash_test/sub1
 drzlrzrmpjhubsnzorrk> gfbfb> smash error: bg: job-id 19 does not exist
 gfbfb> smash: got ctrl-C
 smash error: bg: there is no stopped jobs to resume
 gfbfb> smash error: kill: job-id 19 does not exist
-gfbfb> /tmp/smash_test/sub1
-smash: got ctrl-C
+gfbfb> smash: got ctrl-C
+/tmp/smash_test/sub1
 gfbfb> smash error: open failed: No such file or directory
 gfbfb> smash error: bg: job-id 11 does not exist
 gfbfb> smash: /tmp/smash_test/my_sleep was copied to /tmp/smash_test/sub2/subsub2/ywvjsukvevdrkez
@@ -32,8 +32,8 @@ smash error: fg: jobs list is empty
 eewkbjorohnwllzu> eewkbjorohnwllzu> eewkbjorohnwllzu> cu> /tmp/smash_test/sub3
 cu> smash error: bg: there is no stopped jobs to resume
 cu> /tmp/smash_test/sub3
-cu> cu> cu> smash error: open failed: No such file or directory
-smash: got ctrl-Z
+cu> cu> cu> smash: got ctrl-Z
+smash error: open failed: No such file or directory
 cu> cu> /bin/bash: ls/tmp/smash_test/sub2/subsub2: No such file or directory
 cu> zrvgqcikufrmyki> zrvgqcikufrmyki> smash pid is \d+
 zrvgqcikufrmyki> smash error: fg: jobs list is empty

@@ -27,20 +27,19 @@ jayyvslkaopryocq> zjjcjjgzvmkwmt> zjjcjjgzvmkwmt> smash: /tmp/smash_test/my_slee
 zjjcjjgzvmkwmt> zjjcjjgzvmkwmt> smash pid is \d+
 zjjcjjgzvmkwmt> zjjcjjgzvmkwmt> /tmp/smash_test/sub3
 zjjcjjgzvmkwmt> smash error: kill: job-id 6 does not exist
-zjjcjjgzvmkwmt> khwt> khwt> smash pid is \d+
-smash: got ctrl-Z
+zjjcjjgzvmkwmt> khwt> khwt> smash: got ctrl-Z
+smash pid is \d+
 khwt> smash error: bg: there is no stopped jobs to resume
 khwt> smash error: cd: too many arguments
 khwt> smash error: open failed: No such file or directory
 khwt> smash error: fg: job-id 16 does not exist
 khwt> khwt> /bin/nano
 smash: got ctrl-C
-khwt> smash pid is \d+
-smash: got ctrl-Z
+khwt> smash: got ctrl-Z
 smash: got ctrl-C
-khwt> khwt> smash: /tmp/smash_test/my_sleep was copied to /tmp/smash_test/sub1/subsub1/last/xnjark
-smash: got ctrl-C
-smash: got ctrl-C
+smash pid is \d+
+khwt> khwt> smash: got ctrl-C
+smash: /tmp/smash_test/my_sleep was copied to /tmp/smash_test/sub1/subsub1/last/xnjark
 khwt> smash error: open failed: No such file or directory
 khwt> smash pid is \d+
 khwt> /tmp/smash_test/sub3

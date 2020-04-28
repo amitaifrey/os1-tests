@@ -42,9 +42,9 @@ wdqepmeaacxgz> smash error: fg: job-id 18 does not exist
 wdqepmeaacxgz> smash error: fg: jobs list is empty
 wdqepmeaacxgz> wdqepmeaacxgz> smash error: kill: job-id 8 does not exist
 wdqepmeaacxgz> smash error: kill: job-id 15 does not exist
-wdqepmeaacxgz> smash pid is \d+
-smash: got ctrl-Z
+wdqepmeaacxgz> smash: got ctrl-Z
 smash: got ctrl-C
+smash pid is \d+
 wdqepmeaacxgz> smash: /tmp/smash_test/random2.txt was copied to /tmp/smash_test/sub1/subsub1/last/hyp
 wdqepmeaacxgz> wdqepmeaacxgz> wdqepmeaacxgz> smash: got ctrl-Z
 smash error: fg: job-id 12 does not exist

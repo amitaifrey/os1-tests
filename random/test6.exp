@@ -10,9 +10,8 @@ rwidxyttduffrndwlxai> /tmp/smash_test/sub1/subsub1/last
 rwidxyttduffrndwlxai> rwidxyttduffrndwlxai> /tmp/smash_test/sub1/subsub1
 rwidxyttduffrndwlxai> rwidxyttduffrndwlxai> smash: /tmp/smash_test/my_sleep was copied to /tmp/smash_test/sub3/gaylwfoqdxb
 rwidxyttduffrndwlxai> UmVhbEZydWl0Cg==
+smash: got ctrl-C
 smash: /tmp/smash_test/random2.txt was copied to /tmp/smash_test/sub1/subsub1/ngxpyldcsmxcn
-smash: got ctrl-C
-smash: got ctrl-C
 rwidxyttduffrndwlxai> smash error: chdir failed: No such file or directory
 rwidxyttduffrndwlxai> smash error: fg: jobs list is empty
 rwidxyttduffrndwlxai> 6
@@ -24,19 +23,17 @@ rwidxyttduffrndwlxai> UmVhbEZydWl0Cg==
 rwidxyttduffrndwlxai> smash pid is \d+
 rwidxyttduffrndwlxai> smash pid is \d+
 rwidxyttduffrndwlxai> dh> smash: /tmp/smash_test/my_sleep was copied to /tmp/smash_test/sub2/glwx
-dh> UmVhbEZydWl0Cg==
-smash: got ctrl-C
+dh> smash: got ctrl-C
+UmVhbEZydWl0Cg==
 dh> smash: /tmp/smash_test/random1.txt was copied to /tmp/smash_test/sub1/svwbsnlv
 dh> dh> dh> smash error: fg: job-id 16 does not exist
 dh> dh> smash: /tmp/smash_test/random1.txt was copied to /tmp/smash_test/sub1/subsub1/last/eriz
 smash: got ctrl-Z
 smash error: bg: job-id 10 does not exist
 dh> smash: got ctrl-Z
-dh> smash: /tmp/smash_test/random1.txt was copied to /tmp/smash_test/sub2/subsub2/aubhsucyucu
+dh> smash: got ctrl-C
 smash: got ctrl-C
-smash: got ctrl-C
-smash: got ctrl-C
-smash: got ctrl-C
+smash: /tmp/smash_test/random1.txt was copied to /tmp/smash_test/sub2/subsub2/aubhsucyucu
 dh> dh> smash pid is \d+
 dh> smash: got ctrl-Z
 smash error: bg: there is no stopped jobs to resume

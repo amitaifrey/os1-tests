@@ -4,66 +4,42 @@ smash> cat: test_src_1: No such file or directory
 smash> cat: test_src_1: No such file or directory
 smash> cat: test_src_1: No such file or directory
 smash> smash> smash: got ctrl-Z
-smash: got ctrl-Z
-smash: process \d+ was stopped
-smash> smash: got ctrl-Z
-smash: process \d+ was stopped
-smash> smash> \[1\] sleep 1 | sleep 10 : \d+ \d+ secs \(stopped\)
-\[2\] sleep 10 | sleep 11 : \d+ \d+ secs \(stopped\)
-\[3\] sleep 2 | sleep 4 & : \d+ \d+ secs
-smash> \[1\] sleep 1 | sleep 10 : \d+ \d+ secs \(stopped\)
-\[2\] sleep 10 | sleep 11 : \d+ \d+ secs \(stopped\)
-\[3\] sleep 2 | sleep 4 & : \d+ \d+ secs
-smash> \[1\] sleep 1 | sleep 10 : \d+ \d+ secs \(stopped\)
-\[2\] sleep 10 | sleep 11 : \d+ \d+ secs \(stopped\)
-\[3\] sleep 2 | sleep 4 & : \d+ \d+ secs
-smash> \[1\] sleep 1 | sleep 10 : \d+ \d+ secs \(stopped\)
-\[2\] sleep 10 | sleep 11 : \d+ \d+ secs \(stopped\)
-smash> smash> \[1\] sleep 1 | sleep 10 : \d+ \d+ secs \(stopped\)
-\[2\] sleep 10 | sleep 11 : \d+ \d+ secs \(stopped\)
-\[3\] sleep 4 | sleep 2 & : \d+ \d+ secs
-smash> \[1\] sleep 1 | sleep 10 : \d+ \d+ secs \(stopped\)
-\[2\] sleep 10 | sleep 11 : \d+ \d+ secs \(stopped\)
-\[3\] sleep 4 | sleep 2 & : \d+ \d+ secs
-smash> \[1\] sleep 1 | sleep 10 : \d+ \d+ secs \(stopped\)
-\[2\] sleep 10 | sleep 11 : \d+ \d+ secs \(stopped\)
-\[3\] sleep 4 | sleep 2 & : \d+ \d+ secs
-smash> \[1\] sleep 1 | sleep 10 : \d+ \d+ secs \(stopped\)
-\[2\] sleep 10 | sleep 11 : \d+ \d+ secs \(stopped\)
-smash> smash> my_sleep
+smash: got ctrl-C
+smash: process \d+ was killed
+smash> smash: got ctrl-C
+smash: process \d+ was killed
+smash> smash> \[1\] sleep 2 | sleep 4 & : \d+ \d+ secs
+smash> \[1\] sleep 2 | sleep 4 & : \d+ \d+ secs
+smash> \[1\] sleep 2 | sleep 4 & : \d+ \d+ secs
+smash> smash> smash> \[1\] sleep 4 | sleep 2 & : \d+ \d+ secs
+smash> \[1\] sleep 4 | sleep 2 & : \d+ \d+ secs
+smash> \[1\] sleep 4 | sleep 2 & : \d+ \d+ secs
+smash> smash> smash> my_sleep
 random1.txt
 random2.txt
 sub1
 sub2
 sub3
 smash> 
-smash> 
-smash: got ctrl-Z
+smash> smash: got ctrl-Z
+
 smash: got ctrl-Z
 smash: process \d+ was stopped
 smash> smash> 
-\[1\] sleep 1 | sleep 10 : \d+ \d+ secs \(stopped\)
-\[2\] sleep 10 | sleep 11 : \d+ \d+ secs \(stopped\)
-\[3\] ./my_sleep 8 | echo : \d+ \d+ secs \(stopped\)
-\[4\] ./my_sleep 8 | echo & : \d+ \d+ secs
-smash> \[1\] sleep 1 | sleep 10 : \d+ \d+ secs \(stopped\)
-\[2\] sleep 10 | sleep 11 : \d+ \d+ secs \(stopped\)
-\[3\] ./my_sleep 8 | echo : \d+ \d+ secs \(stopped\)
+\[1\] ./my_sleep 8 | echo : \d+ \d+ secs \(stopped\)
+\[2\] ./my_sleep 8 | echo & : \d+ \d+ secs
+smash> \[1\] ./my_sleep 8 | echo : \d+ \d+ secs \(stopped\)
 smash> smash> 
-\[1\] sleep 1 | sleep 10 : \d+ \d+ secs \(stopped\)
-\[2\] sleep 10 | sleep 11 : \d+ \d+ secs \(stopped\)
-\[3\] ./my_sleep 8 | echo : \d+ \d+ secs \(stopped\)
-\[4\] ./my_sleep 8 | echo & : \d+ \d+ secs
-smash> \[1\] sleep 1 | sleep 10 : \d+ \d+ secs \(stopped\)
-\[2\] sleep 10 | sleep 11 : \d+ \d+ secs \(stopped\)
-\[3\] ./my_sleep 8 | echo : \d+ \d+ secs \(stopped\)
-\[4\] ./my_sleep 8 | echo & : \d+ \d+ secs
+\[1\] ./my_sleep 8 | echo : \d+ \d+ secs \(stopped\)
+\[2\] ./my_sleep 8 | echo & : \d+ \d+ secs
+smash> \[1\] ./my_sleep 8 | echo : \d+ \d+ secs \(stopped\)
+\[2\] ./my_sleep 8 | echo & : \d+ \d+ secs
 smash> signal number 9 was sent to pid \d+
-smash> \[2\] sleep 10 | sleep 11 : \d+ \d+ secs \(stopped\)
-\[3\] ./my_sleep 8 | echo : \d+ \d+ secs \(stopped\)
-\[4\] ./my_sleep 8 | echo & : \d+ \d+ secs
-smash> smashsmash> /tmp/smash> \[2\] ssmash> smash> smash error: kill: job-id 1 does not exist
-smash> signasmash> signasmash> signasmash> signasmash> smash error: kill: job-id 6 does not exist
+smash> \[2\] ./my_sleep 8 | echo & : \d+ \d+ secs
+smash> smashsmash> /tmp/smash> \[2\] .smash> smash> smash error: kill: job-id 1 does not exist
+smash> signasmash> signasmash> smash error: kill: job-id 4 does not exist
+smash> smash error: kill: job-id 5 does not exist
+smash> smash error: kill: job-id 6 does not exist
 smash> smash> 
 ./my_sleep 8 | echo & : \d+
 smash: got ctrl-Z

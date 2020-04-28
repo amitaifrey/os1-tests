@@ -40,4 +40,11 @@ timeout 3 ./my_sleep 20&
 fg
 CtrlC
 jobs
-quit
+timeout 5 sleep 100&
+timeout 10 sleep 200&
+timeout 2 sleep 300&
+timeout 7 sleep 400&
+jobs
+!time.sleep(11)
+jobs
+quit kill

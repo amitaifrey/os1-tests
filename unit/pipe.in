@@ -11,11 +11,11 @@ CtrlZ
 sleep 1 | sleep 10
 !time.sleep(3)
 # Kill the second sleep
-CtrlZ
-sleep 10 | sleep 11
+CtrlC
+sleep 10 | sleep 1
 !time.sleep(3)
 # Kill the first sleep
-CtrlZ
+CtrlC
 #
 # Now ith &
 #

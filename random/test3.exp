@@ -9,15 +9,14 @@ kkjgeyzzykfk> smash error: fg: job-id 18 does not exist
 kkjgeyzzykfk> smash error: cd: too many arguments
 kkjgeyzzykfk> /tmp/smash_test
 kkjgeyzzykfk> wbscfdrvnxes> wbscfdrvnxes> /bin/nano
-wbscfdrvnxes> smash pid is \d+
-smash: got ctrl-Z
+wbscfdrvnxes> smash: got ctrl-Z
+smash pid is \d+
 wbscfdrvnxes> wbscfdrvnxes> smash error: bg: there is no stopped jobs to resume
 wbscfdrvnxes> wbscfdrvnxes> smash error: kill: job-id 3 does not exist
 wbscfdrvnxes> smash: got ctrl-C
 smash error: kill: job-id 14 does not exist
-wbscfdrvnxes> smash error: open failed: No such file or directory
-smash: got ctrl-C
-smash: got ctrl-C
+wbscfdrvnxes> smash: got ctrl-C
+smash error: open failed: No such file or directory
 wbscfdrvnxes> smash: /tmp/smash_test/random2.txt was copied to /tmp/smash_test/sub1/taqvzdumocaagqfxz
 wbscfdrvnxes> smash: /tmp/smash_test/random2.txt was copied to /tmp/smash_test/sub2/subsub2/vasjpvdup
 wbscfdrvnxes> wbscfdrvnxes> /tmp/smash_test/sub2/subsub2
@@ -40,8 +39,8 @@ wbscfdrvnxes> smash: got ctrl-Z
 wbscfdrvnxes> smash error: fg: job-id 7 does not exist
 wbscfdrvnxes> smash: got ctrl-Z
 smash error: bg: job-id 15 does not exist
-wbscfdrvnxes> /bin/nano
-smash: got ctrl-C
+wbscfdrvnxes> smash: got ctrl-C
+/bin/nano
 wbscfdrvnxes> smash pid is \d+
 wbscfdrvnxes> smash error: cd: too many arguments
 wbscfdrvnxes> stwqspuqhjf> stwqspuqhjf> stwqspuqhjf> smash error: fg: job-id 6 does not exist

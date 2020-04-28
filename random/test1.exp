@@ -1,11 +1,9 @@
 smash> /tmp/smash_test
 smash> smash error: bg: job-id 6 does not exist
 smash> /tmp/smash_test
-smash> smash: /tmp/smash_test/random1.txt was copied to /tmp/smash_test/sub1/aqnsmrjfwvfbgbnybdpk
+smash> smash: got ctrl-C
 smash: got ctrl-C
-smash: got ctrl-C
-smash: got ctrl-C
-smash: got ctrl-C
+smash: /tmp/smash_test/random1.txt was copied to /tmp/smash_test/sub1/aqnsmrjfwvfbgbnybdpk
 smash> smash> /bin/nano
 smash: got ctrl-Z
 smash error: bg: job-id 18 does not exist
@@ -49,14 +47,14 @@ wlracy> smash: /tmp/smash_test/random2.txt was copied to /tmp/smash_test/sub1/su
 wlracy> wlracy> wlracy> wlracy> smash error: bg: there is no stopped jobs to resume
 wlracy> wlracy> smash error: open failed: No such file or directory
 wlracy> smash error: fg: jobs list is empty
-wlracy> 6
-smash: got ctrl-Z
+wlracy> smash: got ctrl-Z
 smash: got ctrl-C
+6
 wlracy> UmVhbEZydWl0Cg==
 wlracy> smash error: kill: job-id 8 does not exist
 wlracy> smash error: fg: jobs list is empty
 wlracy> smash: got ctrl-Z
 wlracy> wlracy> smash: got ctrl-C
-wlracy> smash: sending SIGKILL signal to 0 jobs:
-smash: got ctrl-Z
+wlracy> smash: got ctrl-Z
 smash: got ctrl-C
+smash: sending SIGKILL signal to 0 jobs:
