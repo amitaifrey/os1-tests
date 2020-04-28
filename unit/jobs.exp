@@ -183,7 +183,7 @@ smash: got ctrl-C
 smash: process \d+ was killed
 smash> smash error: fg: job-id 20 does not exist
 smash> smash error: fg: job-id 21 does not exist
-smash> smash error: fg: invalid arguments
+smash> smash error: fg: job-id -2 does not exist
 smash> \[1\] sleep 100& : \d+ \d+ secs
 \[2\] sleep 200& : \d+ \d+ secs
 \[4\] sleep 400& : \d+ \d+ secs
@@ -198,7 +198,7 @@ smash> \[1\] sleep 100& : \d+ \d+ secs
 \[14\] sleep \d+ : \d+ \d+ secs \(stopped\)
 smash> sleep \d+ : \d+
 smash> smash error: bg: job-id 20 does not exist
-smash> smash error: bg: invalid arguments
+smash> smash error: bg: job-id -1 does not exist
 smash> \[1\] sleep 100& : \d+ \d+ secs
 \[2\] sleep 200& : \d+ \d+ secs
 \[4\] sleep 400& : \d+ \d+ secs

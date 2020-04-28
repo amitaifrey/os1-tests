@@ -1,9 +1,6 @@
-cat test_src_1.txt
-cat test_src_1 | grep 1
-cat test_src_1 | grep a
-# show only 2 lines
-cat test_src_1 | grep -m 2 a
-cat test_src_1 | head -c 10
+# Show part of the files
+cat random1.txt | grep -m 2 a
+cat random2.txt | head -c 10
 sleep 2 | sleep 2
 !time.sleep(3)
 # Verifying the both sleeps are died
@@ -46,7 +43,7 @@ sleep 1 | ls
 CtrlZ
 ./my_sleep 8 | echo
 !time.sleep(5)
-CtrlZ
+CtrlC
 ./my_sleep 8 | echo &
 jobs
 !time.sleep(9)
@@ -54,20 +51,21 @@ jobs
 ./my_sleep 8 | echo &
 jobs
 !time.sleep(5)
+CtrlC
 jobs
 kill -9 1
 jobs
 # Check internal commands redirection
-showpid | head -c 5
-pwd | head -c 5
-jobs | head -c 5
+showpid | head -c 12
+pwd | head -c 12
+jobs | head -c 12
 sleep 100&
-kill -9 1 | head -c 5
-kill -9 2 | head -c 5
-kill -9 3 | head -c 5
-kill -9 4 | head -c 5
-kill -9 5 | head -c 5
-kill -9 6 | head -c 5
+kill -9 1 | tail -c 8
+kill -9 2 | tail -c 8
+kill -9 3 | tail -c 8
+kill -9 4 | tail -c 8
+kill -9 5 | tail -c 8
+kill -9 6 | tail -c 8
 ./my_sleep 8 | echo &
 fg
 !time.sleep(3)
@@ -84,16 +82,16 @@ jobs
 # stderr
 #
 # verify that we transfer the stderr by truncateing it
-cat not_a_realy_path |& head -c 6
-cd not_a_realy_path |& head -c 6
-cd - |& head -c 6
-cd asdasd asdasd |& head -c 6
-kill -9 30 |& head -c 6
-kill |& head -c 6
-kill asda 1|& head -c 6
+cat not_a_realy_path |& tail -c 12
+cd not_a_realy_path |& tail -c 12
+cd - |& tail -c 12
+cd asdasd asdasd |& tail -c 12
+kill -9 30 |& tail -c 12
+kill |& tail -c 12
+kill asda 1|& tail -c 12
+not_real_command|& tail -c 12
 jobs
-fg |& head -c 6
-fg 1 |& head -c 6
-fg sdf |& head -c 6
-
+fg |& tail -c 12
+fg 1 |& tail -c 12
+fg sdf |& tail -c 12
 quit kill | head -c 30

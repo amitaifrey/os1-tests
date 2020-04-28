@@ -1,16 +1,35 @@
-smash> /bin/bash: ./mysleep: No such file or directory
+smash> smash error: timeout: invalid arguments
+smash> smash error: timeout: invalid arguments
+smash> smash error: timeout: invalid arguments
+smash> my_sleep
+random1.txt
+random2.txt
+sub1
+sub2
+sub3
+smash> before
+smash> smash: got an alarm
+after
+smash> 0
+Done: 2
+smash> smash: got an alarm
+after
+smash> smash: got an alarm
+smash: timeout 3 ./my_sleep 4 timed out!
 smash> smash: got ctrl-C
 smash> smash> /bin/bash: ./mysleep: No such file or directory
-smash> smash: got ctrl-Z
-smash> smash> 0
-2
-Done: 4
-smash> smash: got ctrl-Z
+smash> smash: got an alarm
+smash: got ctrl-C
+smash> smash: got ctrl-C
+smash: process \d+ was killed
+smash> before
+smash> smash: got an alarm
+after
 smash> smash> smash> smash: got an alarm
 smash: timeout 5 ./my_sleep 10 & timed out!
 smash: got an alarm
-smash: timeout 9 ./my_sleep 20 & timed out!
-smash> smash> smash: got an alarm
+smash: timeout 9 ./my_sleep 20 timed out!
+smash> smash> smash> smash: got an alarm
 smash: timeout 3 ./my_sleep 20& timed out!
 smash: got an alarm
 smash: timeout 7 ./my_sleep 10& timed out!
@@ -29,7 +48,8 @@ smash: timeout 3 ./my_sleep 20& timed out!
 smash> smash> timeout 3 ./my_sleep 20& : \d+
 smash: got ctrl-C
 smash: process \d+ was killed
-smash> smash> smash> smash> smash> smash> \[1\] timeout 5 sleep 100& : \d+ \d+ secs
+smash> smash> smash: got an alarm
+smash> smash> smash> smash> \[1\] timeout 5 sleep 100& : \d+ \d+ secs
 \[2\] timeout 10 sleep 200& : \d+ \d+ secs
 \[3\] timeout 2 sleep 300& : \d+ \d+ secs
 \[4\] timeout 7 sleep 400& : \d+ \d+ secs

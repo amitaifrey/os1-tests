@@ -1,24 +1,47 @@
-timeout 3 ./mysleep 5
+# First invalid args
+timeout
+timeout 4
+timeout -4 showpid
+#Check command finished before alarm
+timeout 3 ls
+!time.sleep(2)
+echo before
+!time.sleep(2)
+# Got alarm should be print now, after 2 jobs
+echo after
+# Now check with &
+#Check command finished before alarm
+timeout 3 ./my_sleep 2
+!time.sleep(4)
+# Got alarm should be print now, after done
+echo after
+# Now we let the alarm to kill
+timeout 3 ./my_sleep 4
 !time.sleep(4)
 # Make sure we didnt kill anyone
 CtrlC
-ps | grep sleep
 jobs
-timeout 3 ./mysleep 5
+# Now with &
+timeout 3 ./mysleep 4 &
+jobs
 !time.sleep(4)
+# Should be empty
 # Make sure we didnt kill anyone
-CtrlZ
-ps | grep sleep
+CtrlC
 jobs
-# Verify we dont print alarm
+# Now kill in middle of action
 timeout 6 ./my_sleep 4
-!time.sleep(5)
-CtrlZ
+!time.sleep(3)
+CtrlC
+echo before
+!time.sleep(4)
+# Now should print got alarm
+echo after
 jobs
 timeout 5 ./my_sleep 10 &
 !time.sleep(1)
-timeout 9 ./my_sleep 20 &
-!time.sleep(9)
+timeout 9 ./my_sleep 20
+!time.sleep(10)
 timeout 7 ./my_sleep 10&
 !time.sleep(1)
 timeout 3 ./my_sleep 20&
@@ -40,6 +63,7 @@ timeout 3 ./my_sleep 20&
 fg
 CtrlC
 jobs
+!time.sleep(4)
 timeout 5 sleep 100&
 timeout 10 sleep 200&
 timeout 2 sleep 300&
