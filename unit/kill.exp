@@ -1,0 +1,29 @@
+smash> smash error: kill: job-id 1 does not exist
+smash> smash> smash> smash error: kill: invalid arguments
+smash> \[1\] sleep 10& : \d+ \d+ secs
+smash> smash> \[1\] sleep 10& : \d+ \d+ secs
+\[2\] sleep 5& : \d+ \d+ secs
+smash> smash> \[1\] sleep 10& : \d+ \d+ secs
+\[2\] sleep 5& : \d+ \d+ secs
+\[3\] sleep 3& : \d+ \d+ secs
+smash> smash error: kill: invalid arguments
+smash> smash error: kill: invalid arguments
+smash> smash> smash> \[1\] sleep 10 & : \d+ \d+ secs
+smash> signal number 9 was sent to pid \d+
+smash> smash> smash> smash> smash: got ctrl-Z
+smash: process \d+ was stopped
+smash> \[1\] sleep 5& : \d+ \d+ secs
+\[2\]           sleep        10   & : \d+ \d+ secs
+\[3\] sleep 15 : \d+ \d+ secs \(stopped\)
+smash> signal number 9 was sent to pid \d+
+smash> \[2\]           sleep        10   & : \d+ \d+ secs
+\[3\] sleep 15 : \d+ \d+ secs \(stopped\)
+smash> signal number 9 was sent to pid \d+
+smash> \[3\] sleep 15 : \d+ \d+ secs \(stopped\)
+smash> signal number 9 was sent to pid \d+
+smash> smash> smash> signal number 19 was sent to pid \d+
+smash> \[1\] sleep 10& : \d+ \d+ secs
+smash> smash: got ctrl-C
+smash: process \d+ was killed
+smash> signal number 9 was sent to pid \d+
+smash> smash: sending SIGKILL signal to 0 jobs:

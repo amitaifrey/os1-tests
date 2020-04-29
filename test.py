@@ -18,11 +18,12 @@ UNIT = [
     "unit/chprompt",
     "unit/jobs",
     "unit/manual_pid",
-    "unit/pipe",
     "unit/quit",
     "unit/redirect",
     "unit/showpid",
     "unit/timeout",
+    "unit/kill",
+    "unit/pipe",
 ]
 
 def prepare_env():

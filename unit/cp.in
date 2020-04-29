@@ -1,0 +1,78 @@
+ls
+# Create small file for copying
+ls > temp_file
+ls
+cat temp_file
+cp random1.txt new_random1.txt
+# make sure copy finished and we got the expected print
+!time.sleep(5)
+# If files are equal this command shoulnd
+cmp random1.txt new_random1.txt
+ls
+# Now check in the backround
+ls
+cp random2.txt new_random2.txt&
+# Hope the command havent finished yet
+jobs
+# make sure copy finished and we got the expected print
+!time.sleep(5)
+# If files are equal this command shoulnd
+cmp random2.txt new_random2.txt
+ls
+jobs
+# check full path and relative path
+cp temp_file /tmp/smash_test/new_temp_file
+!time.sleep(1)
+ls
+cp /tmp/smash_test/temp_file new_temp_file2
+!time.sleep(1)
+ls
+cp /tmp/smash_test/temp_file /tmp/smash_test/new_temp_file3
+!time.sleep(1)
+ls
+#
+# Now we test stoping and resuming cp command
+# Now we run infinit cp command
+#
+cp /dev/zero /dev/null
+!time.sleep(1)
+# Stop the command
+CtrlC
+!time.sleep(1)
+jobs
+#
+# Now stop the command
+cp /dev/zero /dev/null
+!time.sleep(1)
+# Stop the command
+CtrlZ
+!time.sleep(1)
+jobs
+# move it to backround
+bg
+!time.sleep(1)
+jobs
+kill -9 1
+!time.sleep(1)
+# The jobs list should be empty
+jobs
+#
+# Now kill
+cp /dev/zero /dev/null
+!time.sleep(1)
+CtrlC
+!time.sleep(1)
+# Check override
+cp temp_file random1.txt
+!time.sleep(1)
+cmp temp_file random1.txt
+jobs
+#
+# Failures
+#
+cp random1.txt /not/exisits/dir/bla
+!time.sleep(1)
+cp /not/exisits/dir/bla random2.txt 
+!time.sleep(1)
+# TODO: Check coping the same file
+quit

@@ -24,4 +24,10 @@ sub3
 smash> smash> smash> /tmp/smash_test/dir1/dir2/dir3
 smash> smash> /tmp/smash_test/dir1/dir2
 smash> smash> dir2
+smash> /tmp/smash_test/dir1
+smash> smash> /tmp/smash_test/dir1/dir2
+smash> smash> /tmp/smash_test/dir1
+smash> smash error: chdir failed: No such file or directory
+smash> /tmp/smash_test/dir1
+smash> smash> /tmp/smash_test/dir1/dir2
 smash> 

@@ -1,0 +1,42 @@
+#test command format and validity of arguments - the next kill commands are invalid
+kill -9 1
+jobs
+sleep 10&
+kill -90 1
+jobs
+sleep 5&
+jobs
+sleep 3&
+!time.sleep(1)
+jobs 5
+kill -not_a_number 1
+kill -9 1 2 3
+!time.sleep(11)
+#jobs list should be empty now
+jobs
+sleep 10 &
+!time.sleep(3)
+jobs
+kill -9 1
+jobs junk_argument
+sleep 5&
+          sleep        10   &
+sleep 15
+CtrlZ
+jobs
+kill -9 1
+jobs
+kill -9 2
+jobs
+kill -9 3
+jobs
+sleep 10&
+kill -19 1
+!time.sleep(2)
+jobs
+!time.sleep(10)
+sleep 10
+!time.sleep(2)
+CtrlC
+kill -9 1
+quit kill

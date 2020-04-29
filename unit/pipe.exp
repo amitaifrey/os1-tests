@@ -1,32 +1,18 @@
-smash> FtLadegF9G73kypBx0Q2igTLP9dE6gfc76Pq6MyKuhZj5bK+ruMAWSQi38gwjOKoWhwfaoiwhh4x
-Q96S4qbwj9tmAJFNZIEmdIZJkHSxFL6gHlNsi0ZqM+/qNR+qI+erslRrxyMmwxrATE43caxj2BFb
-smash: got ctrl-Z
-smash: process \d+ was stopped
-smash> 0Nh83YuEFismash: got ctrl-C
+smash> my_sleep
+random1.txt
+ransmash> look here
+smash> /bin/bash: not_real_command: command not found
+smash> smash> smash> smash: got ctrl-C
 smash: process \d+ was killed
 smash> smash> smash: got ctrl-C
 smash: process \d+ was killed
-smash> smash> smash> \[1\] cat random1.txt | grep -m 2 a : \d+ \d+ secs \(stopped\)
-\[2\] sleep 2 | sleep 4 & : \d+ \d+ secs
-smash> \[1\] cat random1.txt | grep -m 2 a : \d+ \d+ secs \(stopped\)
-\[2\] sleep 2 | sleep 4 & : \d+ \d+ secs
-smash> \[1\] cat random1.txt | grep -m 2 a : \d+ \d+ secs \(stopped\)
-\[2\] sleep 2 | sleep 4 & : \d+ \d+ secs
-smash> \[1\] cat random1.txt | grep -m 2 a : \d+ \d+ secs \(stopped\)
-\[2\] sleep 2 | sleep 4 & : \d+ \d+ secs
-smash> smash> \[1\] cat random1.txt | grep -m 2 a : \d+ \d+ secs \(stopped\)
-\[2\] sleep 2 | sleep 4 & : \d+ \d+ secs
-\[3\] sleep 4 | sleep 2 & : \d+ \d+ secs
-smash> \[1\] cat random1.txt | grep -m 2 a : \d+ \d+ secs \(stopped\)
-\[2\] sleep 2 | sleep 4 & : \d+ \d+ secs
-\[3\] sleep 4 | sleep 2 & : \d+ \d+ secs
-smash> \[1\] cat random1.txt | grep -m 2 a : \d+ \d+ secs \(stopped\)
-\[2\] sleep 2 | sleep 4 & : \d+ \d+ secs
-\[3\] sleep 4 | sleep 2 & : \d+ \d+ secs
-smash> \[1\] cat random1.txt | grep -m 2 a : \d+ \d+ secs \(stopped\)
-\[2\] sleep 2 | sleep 4 & : \d+ \d+ secs
-\[3\] sleep 4 | sleep 2 & : \d+ \d+ secs
-smash> smash> my_sleep
+smash> smash> smash> \[1\] sleep 2 | sleep 4 & : \d+ \d+ secs
+smash> \[1\] sleep 2 | sleep 4 & : \d+ \d+ secs
+smash> \[1\] sleep 2 | sleep 4 & : \d+ \d+ secs
+smash> smash> smash> \[1\] sleep 4 | sleep 2 & : \d+ \d+ secs
+smash> \[1\] sleep 4 | sleep 2 & : \d+ \d+ secs
+smash> \[1\] sleep 4 | sleep 2 & : \d+ \d+ secs
+smash> smash> smash> my_sleep
 random1.txt
 random2.txt
 sub1
@@ -38,24 +24,21 @@ smash> smash: got ctrl-Z
 smash: got ctrl-C
 smash: process \d+ was killed
 smash> smash> 
-\[1\] cat random1.txt | grep -m 2 a : \d+ \d+ secs \(stopped\)
-\[2\] ./my_sleep 8 | echo & : \d+ \d+ secs
-smash> \[1\] cat random1.txt | grep -m 2 a : \d+ \d+ secs \(stopped\)
-smash> smash> 
-\[1\] cat random1.txt | grep -m 2 a : \d+ \d+ secs \(stopped\)
-\[2\] ./my_sleep 8 | echo & : \d+ \d+ secs
+\[1\] ./my_sleep 8 | echo & : \d+ \d+ secs
+smash> smash> smash> 
+\[1\] ./my_sleep 8 | echo & : \d+ \d+ secs
 smash> smash: got ctrl-C
-\[1\] cat random1.txt | grep -m 2 a : \d+ \d+ secs \(stopped\)
-\[2\] ./my_sleep 8 | echo & : \d+ \d+ secs
+\[1\] ./my_sleep 8 | echo & : \d+ \d+ secs
 smash> signal number 9 was sent to pid \d+
-smash> \[2\] ./my_sleep 8 | echo & : \d+ \d+ secs
-smash> smash pid issmash> /tmp/smash_tsmash> \[2\] ./my_slesmash> smash> smash error: kill: job-id 1 does not exist
-smash> d \d+
-smash> d \d+
+smash> smash> smash pid issmash> /tmp/smash_tsmash> smash> smash> signal number 9 was sent to pid \d+
+smash> smash error: kill: job-id 2 does not exist
+smash> smash error: kill: job-id 3 does not exist
 smash> smash error: kill: job-id 4 does not exist
 smash> smash error: kill: job-id 5 does not exist
 smash> smash error: kill: job-id 6 does not exist
 smash> smash> 
+smash> smash> smash> signal number 9 was sent to pid \d+
+smash> smash> smash> 
 ./my_sleep 8 | echo & : \d+
 smash: got ctrl-Z
 smash: process \d+ was stopped
@@ -68,7 +51,8 @@ smash: process \d+ was stopped
 smash> ./my_sleep 4 | echo : \d+
 smash> smash> r directory
 smash> r directory
-smash> smash> y arguments
+smash> PWD not set
+smash> y arguments
 smash> s not exist
 smash> d arguments
 smash> d arguments
@@ -76,4 +60,4 @@ smash> d not found
 smash> smash> st is empty
 smash> s not exist
 smash> d arguments
-smash> smash: sending SIGKILL signal 
+smash> smash: sending SIGKILL signal to 0 jobs:

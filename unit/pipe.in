@@ -1,18 +1,22 @@
-# Show part of the files
-cat random1.txt | grep -m 2 a
-cat random2.txt | head -c 10
+ls | head -c 24
+echo dont look at me | echo look here
+# We still should see the stderr output
+not_real_command | sleep 1
+!time.sleep(3)
 sleep 2 | sleep 2
-!time.sleep(3)
+!time.sleep(3.5)
 # Verifying the both sleeps are died
-CtrlZ
+ps | grep sleep
 sleep 1 | sleep 10
-!time.sleep(3)
+!time.sleep(4)
 # Kill the second sleep
 CtrlC
+ps | grep sleep
 sleep 10 | sleep 1
 !time.sleep(3)
 # Kill the first sleep
 CtrlC
+ps | grep sleep
 #
 # Now ith &
 #
@@ -60,12 +64,21 @@ showpid | head -c 12
 pwd | head -c 12
 jobs | head -c 12
 sleep 100&
-kill -9 1 | tail -c 8
-kill -9 2 | tail -c 8
-kill -9 3 | tail -c 8
-kill -9 4 | tail -c 8
-kill -9 5 | tail -c 8
-kill -9 6 | tail -c 8
+kill -9 1
+kill -9 2
+kill -9 3
+kill -9 4
+kill -9 5
+kill -9 6
+# Check that kill with pipe is still working
+sleep 10 &
+kill -9 1 | echo
+jobs
+!time.sleep(1)
+sleep 10 &
+echo | kill -9 1
+jobs
+!time.sleep(1)
 ./my_sleep 8 | echo &
 fg
 !time.sleep(3)
@@ -94,4 +107,4 @@ jobs
 fg |& tail -c 12
 fg 1 |& tail -c 12
 fg sdf |& tail -c 12
-quit kill | head -c 30
+quit kill

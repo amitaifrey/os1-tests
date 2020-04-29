@@ -27,4 +27,14 @@ pwd
 # /tmp/smash_test/dir1
 cd ..
 ls
+# Check that failing cd wont chage last dir
+pwd
+cd -
+pwd
+cd -
+pwd
+cd asdasdasdasd
+pwd
+cd -
+pwd
 quit
