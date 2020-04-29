@@ -24,6 +24,7 @@ UNIT = [
     "unit/timeout",
     "unit/kill",
     "unit/pipe",
+    "unit/cp",
 ]
 
 def prepare_env():

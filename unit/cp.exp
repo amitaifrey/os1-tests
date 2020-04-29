@@ -1,0 +1,97 @@
+smash> my_sleep
+random1.txt
+random2.txt
+sub1
+sub2
+sub3
+smash> smash> my_sleep
+random1.txt
+random2.txt
+sub1
+sub2
+sub3
+temp_file
+smash> my_sleep
+random1.txt
+random2.txt
+sub1
+sub2
+sub3
+temp_file
+smash> smash: random1.txt was copied to new_random1.txt
+smash> smash> my_sleep
+new_random1.txt
+random1.txt
+random2.txt
+sub1
+sub2
+sub3
+temp_file
+smash> my_sleep
+new_random1.txt
+random1.txt
+random2.txt
+sub1
+sub2
+sub3
+temp_file
+smash> smash> smash: random2.txt was copied to new_random2.txt
+smash> smash> my_sleep
+new_random1.txt
+new_random2.txt
+random1.txt
+random2.txt
+sub1
+sub2
+sub3
+temp_file
+smash> smash> smash: temp_file was copied to /tmp/smash_test/new_temp_file
+smash> my_sleep
+new_random1.txt
+new_random2.txt
+new_temp_file
+random1.txt
+random2.txt
+sub1
+sub2
+sub3
+temp_file
+smash> smash: /tmp/smash_test/temp_file was copied to new_temp_file2
+smash> my_sleep
+new_random1.txt
+new_random2.txt
+new_temp_file
+new_temp_file2
+random1.txt
+random2.txt
+sub1
+sub2
+sub3
+temp_file
+smash> smash: /tmp/smash_test/temp_file was copied to /tmp/smash_test/new_temp_file3
+smash> my_sleep
+new_random1.txt
+new_random2.txt
+new_temp_file
+new_temp_file2
+new_temp_file3
+random1.txt
+random2.txt
+sub1
+sub2
+sub3
+temp_file
+smash> smash: got ctrl-C
+smash: process \d+ was killed
+smash> smash> smash: got ctrl-Z
+smash: process \d+ was stopped
+smash> \[1\] cp /dev/zero /dev/null : \d+ \d+ secs \(stopped\)
+smash> cp /dev/zero /dev/null : \d+
+smash> \[1\] cp /dev/zero /dev/null : \d+ \d+ secs
+smash> signal number 9 was sent to pid \d+
+smash> smash> smash: got ctrl-C
+smash: process \d+ was killed
+smash> smash: temp_file was copied to random1.txt
+smash> smash> smash> smash error: open failed: No such file or directory
+smash> smash error: open failed: No such file or directory
+smash> 
