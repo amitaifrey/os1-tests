@@ -61,4 +61,11 @@ smash: got an alarm
 smash: timeout 7 sleep 400& timed out!
 smash: got an alarm
 smash: timeout 10 sleep 200& timed out!
+smash> smash> smash: got an alarm
+smash: timeout 2 sleep 4& timed out!
+smash: got ctrl-C
+smash: process \d+ was killed
+smash> smash> smash: got an alarm
+smash: got ctrl-C
+smash: process \d+ was killed
 smash> smash: sending SIGKILL signal to 0 jobs:

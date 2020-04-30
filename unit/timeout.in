@@ -71,4 +71,19 @@ timeout 7 sleep 400&
 jobs
 !time.sleep(11)
 jobs
+#
+# Get alarm during other command
+#
+timeout 2 sleep 4&
+sleep 10
+!time.sleep(3)
+# The alarm should kill the sleep4& 
+# Kill sleep 10
+CtrlC
+# Now we check in case the command died before alarm and during other command (Checking that you clean jobs list in alarm handler as well)
+timeout 3 sleep 1&
+sleep 10
+!time.sleep(5)
+# Should kill the sleep4& 
+CtrlC
 quit kill
