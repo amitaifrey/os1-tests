@@ -1,0 +1,6 @@
+sleep 1&
+sleep 1&
+fg
+!time.sleep(1)
+fg 1
+quit

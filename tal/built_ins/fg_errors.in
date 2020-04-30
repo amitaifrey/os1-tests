@@ -1,0 +1,7 @@
+# Tests all errors in the fg command. Based on https://piazza.com/class/k7s8mucctm92mq?cid=204
+fg 1
+fg
+fg -1
+fg 1 1
+fg a
+quit

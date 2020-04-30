@@ -1,0 +1,11 @@
+# Tests various error of the kill command. Note that this is mostly based on what was said about fg.
+kill -9
+kill
+kill -9 1 2
+kill 5 1
+kill a 1
+kill -9 -1
+kill -9 a
+kill -9 512
+kill -512 512
+quit

@@ -13,19 +13,6 @@ TEST_DIR = '/tmp/smash_test'
 
 FILES_TO_COPY = ["random1.txt", "random2.txt",  "my_sleep"]
 
-UNIT = [
-    "unit/cd",
-    "unit/chprompt",
-    "unit/jobs",
-    "unit/quit",
-    "unit/redirect",
-    "unit/showpid",
-    "unit/timeout",
-    "unit/kill",
-    "unit/pipe",
-    "unit/cp",
-]
-
 def prepare_env():
     testsdir = os.path.dirname(os.path.abspath(__file__))
     if testsdir != '' :
@@ -193,24 +180,34 @@ def str2bool(v):
         raise argparse.ArgumentTypeError('Boolean value expected.')
 
 
-if __name__ == "__main__":
+def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('-smash', type=str, default="./smash")
     parser.add_argument('-test', type=str)
     parser.add_argument('-valgrind', type=str2bool, default=False)
     args = parser.parse_args()
 
-    output = args.test + ".out"
-    exp = args.test + ".exp"
+    if os.path.isdir(args.test):
+        directory = os.fsencode(args.test)
+        files = [x.decode() for x in os.listdir(directory)]
+        for filename in files:
+            if filename.endswith(".in"):
+                filename_no_ext = os.path.splitext(filename)[0]
+                if filename_no_ext + ".exp" in files:
+                    print(os.path.join(args.test, filename_no_ext) + ": ", end='')
+                    run_test(args.smash, os.path.join(args.test, filename_no_ext), args.valgrind)
+                    output = os.path.join(args.test, filename_no_ext + ".out")
+                    exp = os.path.join(args.test, filename_no_ext + ".exp")
+                    diff(exp, output)
+        return
 
-    if args.test == "unit":
-        for test in UNIT:
-            print(test + ": ", end='')
-            run_test(args.smash, test, args.valgrind)
-            output = test + ".out"
-            exp = test + ".exp"
-            diff(exp, output)
-
-    if args.test != "unit":
+    else:
+        output = args.test + ".out"
+        exp = args.test + ".exp"
         run_test(args.smash, args.test, args.valgrind)
         diff(exp, output)
+
+
+if __name__ == "__main__":
+    main()
+

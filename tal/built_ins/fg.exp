@@ -1,0 +1,3 @@
+smash> smash> smash> sleep 1& : \d+
+smash> smash error: fg: job-id 1 does not exist
+smash> 
