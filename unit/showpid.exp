@@ -1,5 +1,6 @@
-smash> smash pid is \d+
-smash> smash pid is \d+
-smash> smash pid is \d+
-smash> smash pid is \d+
+smash> smash pid is (?P<pid>\d+)
+smash> smash pid is (?P<pid>\d+)
+smash> smash> smash pid is (?P<pid>\d+)
+smash> smash pid is (?P<pid>\d+)
+smash> smash pid is (?P<pid>\d+)
 smash> 

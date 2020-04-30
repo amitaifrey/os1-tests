@@ -1,8 +1,0 @@
-# Verify that all pids in the output files are equal
-showpid
-showpid
-showpid > my_pid
-showpid | grep smash
-sleep 1 | showpid
-cat my_pid
-quit

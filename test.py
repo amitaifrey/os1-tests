@@ -17,7 +17,6 @@ UNIT = [
     "unit/cd",
     "unit/chprompt",
     "unit/jobs",
-    "unit/manual_pid",
     "unit/quit",
     "unit/redirect",
     "unit/showpid",
@@ -117,31 +116,47 @@ def run_test(execu, test, valgrind):
                     return
             print('leak detected')
 
+def createLine(linenum, is_delete, line):
+    prefix = '[' + str(linenum+1) + '] '
+    if is_delete:
+        prefix += '-'
+    else:
+        prefix += '+'
+    return prefix + line + '\n'
 
 def unified_diff(a, b, n=3):
+    regex_groups = {}
+
     for group in difflib.SequenceMatcher(None,a,b).get_grouped_opcodes(n):
         for tag, i1, i2, j1, j2 in group:
             if tag == 'equal':
                 continue
             if tag == 'replace':
                 for i in range(0,min(i2-i1,j2-j1)):
-                    if not re.match(a[i1], b[j1]):
-                        yield '-' + a[i1] + '\n'
-                        yield '+' + b[j1] + '\n'
+                    match = re.match(a[i1], b[j1])
+                    groups_match = True
+                    for k in match.groupdict().keys():
+                        if k not in regex_groups:
+                            regex_groups[k] = match.groupdict()[k]
+                        else:
+                            groups_match = groups_match and (regex_groups[k] == match.groupdict()[k])
+                    if not match or not groups_match:
+                        yield createLine(i1, True, a[i1])
+                        yield createLine(j1, False, b[j1])
                     i1 += 1
                     j1 += 1
                 while(i1 < i2):
-                    yield '-' + a[i1] + '\n'
+                    yield createLine(i1, True, a[i1])
                     i1 += 1
                 while(j1 < j2):
-                    yield '+' + b[j1] + '\n'
+                    yield createLine(j1, False, b[j1])
                     j1 += 1
             if tag == 'delete':
                 for line in a[i1:i2]:
-                    yield '-' + line + '\n'
+                    yield createLine(i1, True, line)
             if tag == 'insert':
                 for line in b[j1:j2]:
-                    yield '+' + line + '\n'
+                    yield createLine(j1, False, line)
 
 
 def diff(expected, actual):
@@ -178,7 +193,7 @@ if __name__ == "__main__":
     output = args.test + ".out"
     exp = args.test + ".exp"
 
-    if args.test == "all" or args.test == "unit":
+    if args.test == "unit":
         for test in UNIT:
             print(test + ": ", end='')
             run_test(args.smash, test, args.valgrind)
@@ -186,16 +201,6 @@ if __name__ == "__main__":
             exp = test + ".exp"
             diff(exp, output)
 
-    if args.test == "all" or args.test == "random":
-        for i in range(1,11):
-            test = 'random/test' + str(i)
-            print(test + ": ", end='')
-            run_test(args.smash, test, args.valgrind)
-            output = test + ".out"
-            exp = test + ".exp"
-            diff(exp, output)
-
-    if args.test != "all" and args.test != "random" and \
-            args.test != "unit":
+    if args.test != "unit":
         run_test(args.smash, args.test, args.valgrind)
         diff(exp, output)

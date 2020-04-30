@@ -6,17 +6,14 @@ cat temp_file
 cp random1.txt new_random1.txt
 # make sure copy finished and we got the expected print
 !time.sleep(5)
-# If files are equal this command shoulnd
+# If files are equal this command not printing
 cmp random1.txt new_random1.txt
 ls
-# Now check in the backround
-ls
-cp random2.txt new_random2.txt&
-# Hope the command havent finished yet
-jobs
+# Now check with a bigger file and &
+cp random2.txt new_random2.txt &
 # make sure copy finished and we got the expected print
 !time.sleep(5)
-# If files are equal this command shoulnd
+# If files are equal this command not printing
 cmp random2.txt new_random2.txt
 ls
 jobs
@@ -62,6 +59,21 @@ cp /dev/zero /dev/null
 !time.sleep(1)
 CtrlC
 !time.sleep(1)
+# Now kill from fg
+cp /dev/zero /dev/null&
+jobs
+!time.sleep(1)
+fg
+!time.sleep(1)
+CtrlC
+!time.sleep(1)
+jobs
+# Copy empty file
+touch empty_file
+ls
+cp empty_file new_empty_file
+ls
+cmp empty_file new_empty_file
 # Check override
 cp temp_file random1.txt
 !time.sleep(1)
@@ -74,5 +86,20 @@ cp random1.txt /not/exisits/dir/bla
 !time.sleep(1)
 cp /not/exisits/dir/bla random2.txt 
 !time.sleep(1)
-# TODO: Check coping the same file
+# Same file
+cp random1.txt old_random1.txt
+!time.sleep(1)
+cp random1.txt random1.txt
+cmp random1.txt old_random1.txt
+cp /tmp/smash_test/random1.txt random1.txt
+cmp random1.txt old_random1.txt
+cp random1.txt /tmp/smash_test/random1.txt
+cmp random1.txt old_random1.txt
+cp /tmp/smash_test/random1.txt /tmp/smash_test/random1.txt
+cmp random1.txt old_random1.txt
+cp doesnt_exist.txt doesnt_exist.txt
+ls sub1
+cp random1.txt sub1/random1.txt
+ls sub1
+cmp sub1/random1.txt old_random1.txt
 quit

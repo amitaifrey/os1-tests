@@ -24,14 +24,10 @@ This is done in order to help us from solving bugs for everyone, so
 
 ### Basic Usage
 1. Copy the tests framework folder to your machine, with the tests
-2. In that folder, run: `./test.py -smash="<your_smash>" -test="all"`
+2. In that folder, run: `./test.py -smash="<your_smash>" -test="unit"`
 3. Check the output for diffs/equal prompts
 
 ### Advanced Usage
-* In order to run only the unit tests, run: `./test.py -smash
-="<your_smash>" -test="unit"`
-* In order to run only the random tests, run: `./test.py -smash
-="<your_smash>" -test="random"`
 * In order to run a specific test by its name, run: `./test.py -smash
 ="<your_smash>" -test="<test_name>"`. For example: `./test.py -smash
 ="smash" -test="unit/jobs"`
@@ -51,6 +47,13 @@ This is done in order to help us from solving bugs for everyone, so
    them plainly.
   * Of course the framework supports standard regex matching. The sky is
    the limit! 
+* Additionally, the framework supports comparing regex groups in
+ multiple lines. This can help make sure you get the same output in
+  different calls by the same test. For example, in order to make sure
+   that the pid stays the same, you can write: `smash> smash pid is (?P
+   <pid>\d+)` in the *.exp file every time you run `showpid`. The
+    framework will make sure that the regex group `pid` always has the
+     same value.  
 * This framework also relies on setting up the /tmp/smash_test directory 
  as we expect it, with random files for copying and checking.
 * You can comment the input files by starting the line with `#`

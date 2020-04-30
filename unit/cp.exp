@@ -27,16 +27,8 @@ sub1
 sub2
 sub3
 temp_file
-smash> my_sleep
-new_random1.txt
-random1.txt
-random2.txt
-sub1
-sub2
-sub3
-temp_file
 smash> smash> smash: random2.txt was copied to new_random2.txt
-smash> smash> my_sleep
+smash> my_sleep
 new_random1.txt
 new_random2.txt
 random1.txt
@@ -91,7 +83,49 @@ smash> \[1\] cp /dev/zero /dev/null : \d+ \d+ secs
 smash> signal number 9 was sent to pid \d+
 smash> smash> smash: got ctrl-C
 smash: process \d+ was killed
-smash> smash: temp_file was copied to random1.txt
+smash> smash> \[1\] cp /dev/zero /dev/null& : \d+ \d+ secs
+smash> cp /dev/zero /dev/null& : \d+
+smash: got ctrl-C
+smash: process \d+ was killed
+smash> smash> smash> empty_file
+my_sleep
+new_random1.txt
+new_random2.txt
+new_temp_file
+new_temp_file2
+new_temp_file3
+random1.txt
+random2.txt
+sub1
+sub2
+sub3
+temp_file
+smash> smash: empty_file was copied to new_empty_file
+smash> empty_file
+my_sleep
+new_empty_file
+new_random1.txt
+new_random2.txt
+new_temp_file
+new_temp_file2
+new_temp_file3
+random1.txt
+random2.txt
+sub1
+sub2
+sub3
+temp_file
+smash> smash> smash: temp_file was copied to random1.txt
 smash> smash> smash> smash error: open failed: No such file or directory
 smash> smash error: open failed: No such file or directory
-smash> 
+smash> smash: random1.txt was copied to old_random1.txt
+smash> smash: random1.txt was copied to random1.txt
+smash> smash> smash: /tmp/smash_test/random1.txt was copied to random1.txt
+smash> smash> smash: random1.txt was copied to /tmp/smash_test/random1.txt
+smash> smash> smash: /tmp/smash_test/random1.txt was copied to /tmp/smash_test/random1.txt
+smash> smash> smash error: open failed: No such file or directory
+smash> subsub1
+smash> smash: random1.txt was copied to sub1/random1.txt
+smash> random1.txt
+subsub1
+smash> smash> 
