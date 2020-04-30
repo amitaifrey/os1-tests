@@ -66,7 +66,6 @@ This is done in order to help us from solving bugs for everyone, so
   is the number of seconds it will sleep, printing the time that has
    passed every two seconds. 
 * The tests that are contained in this repository consist of unit
- tests written for common edge-cases.
- you have additional test cases that are not checked here, please open a
+ tests written for common edge-cases. If you have additional test cases that are not checked here, please open a
   pull request for us with them and we will be happy to add them to the
    repository.
