@@ -101,6 +101,13 @@ def run_test(execu, test, valgrind):
             pass
 
     time.sleep(3) 
+
+    try:
+        p.wait(3)
+    except:
+        print("Warning: Smash should be died, but its still alive, killing it with SIGKILL")
+        p.kill()
+
     try:
         p.stdin.close()
     except:
@@ -135,11 +142,14 @@ def unified_diff(a, b, n=3):
                 for i in range(0,min(i2-i1,j2-j1)):
                     match = re.match(a[i1], b[j1])
                     groups_match = True
-                    for k in match.groupdict().keys():
+                    groupdict = {}
+                    if match:
+                        groupdict = match.groupdict()
+                    for k in groupdict.keys():
                         if k not in regex_groups:
-                            regex_groups[k] = match.groupdict()[k]
+                            regex_groups[k] = groupdict[k]
                         else:
-                            groups_match = groups_match and (regex_groups[k] == match.groupdict()[k])
+                            groups_match = groups_match and (regex_groups[k] == groupdict[k])
                     if not match or not groups_match:
                         yield createLine(i1, True, a[i1])
                         yield createLine(j1, False, b[j1])
