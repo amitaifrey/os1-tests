@@ -1,0 +1,6 @@
+smash> smash error: fg: job-id 1 does not exist
+smash> smash error: fg: jobs list is empty
+smash> smash error: fg: job-id -1 does not exist
+smash> smash error: fg: invalid arguments
+smash> smash error: fg: invalid arguments
+smash> 

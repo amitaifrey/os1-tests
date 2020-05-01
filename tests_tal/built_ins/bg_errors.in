@@ -1,0 +1,6 @@
+# Checks all different errors in the bg command.
+bg 1 2
+bg -1
+bg
+bg 500
+quit
