@@ -5,6 +5,7 @@ ls
 cat temp_file
 cp random1.txt new_random1.txt
 # make sure copy finished and we got the expected print
+# If you have a failure here, it might be because you have slow cp (that's ok) try to increase the !time.sleep(5) to a higher number
 !time.sleep(5)
 # If files are equal this command not printing
 cmp random1.txt new_random1.txt

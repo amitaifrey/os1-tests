@@ -1,7 +1,7 @@
 #include <unistd.h>
 #include <stdio.h>
 #include <stdlib.h>
-
+#include <iostream>
 int main(int argc, char *argv[])
 {
     if (argc != 2)
@@ -14,11 +14,11 @@ int main(int argc, char *argv[])
 
     for (int i = 0; i < timeout; i += 2)
     {
-        printf("%d\n", i);
+        std::cout << i << std::endl;
         sleep(2);
     }
 
-    printf("Done: %d\n", timeout);
+    std::cout << "Done: " << timeout << std::endl;
 
     return 0;
 }
