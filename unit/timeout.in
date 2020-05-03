@@ -22,7 +22,7 @@ timeout 3 ./my_sleep 4
 CtrlC
 jobs
 # Now with &
-timeout 3 ./mysleep 4 &
+timeout 3 ./my_sleep 4 &
 jobs
 !time.sleep(4)
 # Should be empty

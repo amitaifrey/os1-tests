@@ -5,6 +5,9 @@ chprompt
 chprompt
 chprompt test2
 chprompt test2
+chprompt smash
+chprompt test1
+chprompt
 chprompt test2
 # Shoud be new and not test2
 chprompt new test2

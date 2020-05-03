@@ -20,7 +20,7 @@ def prepare_env():
     
     os.system("killall -9 sleep 2> /dev/null")
     # Compile my_sleep
-    os.system(f"gcc -o {testsdir}my_sleep {testsdir}my_sleep.c")
+    os.system(f"g++ -o {testsdir}my_sleep {testsdir}my_sleep.cpp")
 
     try:
         shutil.rmtree(TEST_DIR)
