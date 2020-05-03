@@ -18,17 +18,23 @@ random2.txt
 sub1
 sub2
 sub3
-smash> 
+smash> 0
+2
+4
+6
+Done: 8
 smash> smash: got ctrl-Z
-
 smash: got ctrl-C
 smash: process \d+ was killed
-smash> smash> 
-\[1\] ./my_sleep 8 | echo & : \d+ \d+ secs
-smash> smash> smash> 
-\[1\] ./my_sleep 8 | echo & : \d+ \d+ secs
+smash> smash> \[1\] ./my_sleep 8 | grep --color=never ".*" & : \d+ \d+ secs
+smash> 0
+2
+4
+6
+Done: 8
+smash> smash> \[1\] ./my_sleep 8 | grep --color=never ".*" & : \d+ \d+ secs
 smash> smash: got ctrl-C
-\[1\] ./my_sleep 8 | echo & : \d+ \d+ secs
+\[1\] ./my_sleep 8 | grep --color=never ".*" & : \d+ \d+ secs
 smash> signal number 9 was sent to pid \d+
 smash> smash> smash pid issmash> /tmp/smash_tsmash> smash> smash> signal number 9 was sent to pid \d+
 smash> smash error: kill: job-id 2 does not exist
@@ -38,18 +44,19 @@ smash> smash error: kill: job-id 5 does not exist
 smash> smash error: kill: job-id 6 does not exist
 smash> smash> 
 smash> smash> smash> signal number 9 was sent to pid \d+
-smash> smash> smash> 
-./my_sleep 8 | echo & : \d+
+smash> smash> smash> ./my_sleep 8 | grep --color=never ".*" & : \d+
 smash: got ctrl-Z
 smash: process \d+ was stopped
-smash> ./my_sleep 8 | echo & : \d+
+smash> ./my_sleep 8 | grep --color=never ".*" & : \d+
 smash: got ctrl-C
 smash: process \d+ was killed
-smash> smash> 
-smash: got ctrl-Z
+smash> smash> smash: got ctrl-Z
 smash: process \d+ was stopped
-smash> ./my_sleep 4 | echo : \d+
-smash> smash> r directory
+smash> ./my_sleep 4 | grep --color=never ".*" : \d+
+smash> 0
+2
+Done: 4
+smash> r directory
 smash> r directory
 smash> PWD not set
 smash> y arguments

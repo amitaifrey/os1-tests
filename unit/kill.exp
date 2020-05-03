@@ -1,3 +1,14 @@
+smash> smash error: kill: invalid arguments
+smash> smash error: kill: job-id 1 does not exist
+smash> smash error: kill: job-id 1 does not exist
+smash> smash error: kill: invalid arguments
+smash> smash error: kill: invalid arguments
+smash> smash error: kill: job-id 1 does not exist
+smash> smash> smash error: kill: invalid arguments
+smash> smash error: kill: invalid arguments
+smash> smash error: kill: invalid arguments
+smash> smash error: kill: invalid arguments
+smash> signal number 9 was sent to pid \d+
 smash> smash error: kill: job-id 1 does not exist
 smash> smash> smash> smash error: kill failed: Invalid argument
 smash> \[1\] sleep 10& : \d+ \d+ secs

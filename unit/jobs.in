@@ -113,4 +113,11 @@ sleep 888
 CtrlZ
 bg
 jobs
+# piazza 59
+sleep 100&
+jobs
+fg > example.txt
+CtrlZ
+echo "I'm the real slim shady"
+cat example.txt
 quit kill
