@@ -1,10 +1,10 @@
 smash> smash error: kill: invalid arguments
 smash> smash error: kill: invalid arguments
 smash> smash error: kill: invalid arguments
-smash> smash error: kill: invalid arguments
+smash> smash error: kill: job-id 1 does not exist
 smash> smash error: kill: invalid arguments
 smash> smash error: kill: job-id -1 does not exist
 smash> smash error: kill: invalid arguments
 smash> smash error: kill: job-id 512 does not exist
-smash> smash error: kill: invalid arguments
+smash> smash error: kill: job-id 512 does not exist
 smash> 
