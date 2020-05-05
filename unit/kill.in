@@ -1,4 +1,6 @@
 # invalid args
+kill 9 1
+kill -9 -1
 kill -9 abc
 kill -9 1
 kill -abc 1
@@ -10,6 +12,7 @@ kill -9 abc
 kill -abc 1
 kill abc abc
 kill -abc abc
+kill 9 1
 kill -9 1
 #test command format and validity of arguments - the next kill commands are invalid
 kill -9 1
