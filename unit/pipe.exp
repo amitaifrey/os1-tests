@@ -24,17 +24,23 @@ smash> 0
 6
 Done: 8
 smash> smash: got ctrl-Z
+0
+2
+4
 smash: got ctrl-C
 smash: process \d+ was killed
-smash> smash> \[1\] ./my_sleep 8 | grep --color=never ".*" & : \d+ \d+ secs
-smash> 0
-2
+smash> smash> 0
+\[1\] ./my_sleep 8 | grep --line-buffered --color=never ".*" & : \d+ \d+ secs
+smash> 2
 4
 6
 Done: 8
-smash> smash> \[1\] ./my_sleep 8 | grep --color=never ".*" & : \d+ \d+ secs
-smash> smash: got ctrl-C
-\[1\] ./my_sleep 8 | grep --color=never ".*" & : \d+ \d+ secs
+smash> smash> 0
+\[1\] ./my_sleep 8 | grep --line-buffered --color=never ".*" & : \d+ \d+ secs
+smash> 2
+4
+smash: got ctrl-C
+\[1\] ./my_sleep 8 | grep --line-buffered --color=never ".*" & : \d+ \d+ secs
 smash> signal number 9 was sent to pid \d+
 smash> smash> smash pid issmash> /tmp/smash_tsmash> smash> smash> signal number 9 was sent to pid \d+
 smash> smash error: kill: job-id 2 does not exist
@@ -42,19 +48,21 @@ smash> smash error: kill: job-id 3 does not exist
 smash> smash error: kill: job-id 4 does not exist
 smash> smash error: kill: job-id 5 does not exist
 smash> smash error: kill: job-id 6 does not exist
-smash> smash> 
+smash> smash> signal number 9 was sent to pid \d+
 smash> smash> smash> signal number 9 was sent to pid \d+
-smash> smash> smash> ./my_sleep 8 | grep --color=never ".*" & : \d+
+smash> smash> smash> 0
+./my_sleep 8 | grep --line-buffered --color=never ".*" & : \d+
+2
 smash: got ctrl-Z
 smash: process \d+ was stopped
-smash> ./my_sleep 8 | grep --color=never ".*" & : \d+
+smash> ./my_sleep 8 | grep --line-buffered --color=never ".*" & : \d+
 smash: got ctrl-C
 smash: process \d+ was killed
-smash> smash> smash: got ctrl-Z
+smash> smash> 0
+smash: got ctrl-Z
 smash: process \d+ was stopped
-smash> ./my_sleep 4 | grep --color=never ".*" : \d+
-smash> 0
-2
+smash> ./my_sleep 4 | grep --line-buffered --color=never ".*" : \d+
+smash> 2
 Done: 4
 smash> r directory
 smash> r directory

@@ -42,17 +42,17 @@ ls | sleep 1
 !time.sleep(2)
 sleep 1 | ls
 !time.sleep(2)
-./my_sleep 8 | grep --color=never ".*"
+./my_sleep 8 | grep --line-buffered --color=never ".*"
 !time.sleep(9)
 CtrlZ
-./my_sleep 8 | grep --color=never ".*"
+./my_sleep 8 | grep --line-buffered --color=never ".*"
 !time.sleep(5)
 CtrlC
-./my_sleep 8 | grep --color=never ".*" &
+./my_sleep 8 | grep --line-buffered --color=never ".*" &
 jobs
 !time.sleep(9)
 jobs
-./my_sleep 8 | grep --color=never ".*" &
+./my_sleep 8 | grep --line-buffered --color=never ".*" &
 jobs
 !time.sleep(5)
 CtrlC
@@ -72,21 +72,21 @@ kill -9 5
 kill -9 6
 # Check that kill with pipe is still working
 sleep 10 &
-kill -9 1 | echo
+kill -9 1 | grep --line-buffered --color=never ".*"
 jobs
 !time.sleep(1)
 sleep 10 &
 echo | kill -9 1
 jobs
 !time.sleep(1)
-./my_sleep 8 | grep --color=never ".*" &
+./my_sleep 8 | grep --line-buffered --color=never ".*" &
 fg
 !time.sleep(3)
 CtrlZ
 fg
 CtrlC
 jobs
-./my_sleep 4 | grep --color=never ".*"
+./my_sleep 4 | grep --line-buffered --color=never ".*"
 CtrlZ
 bg
 !time.sleep(6)

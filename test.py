@@ -127,7 +127,7 @@ def unified_diff(a, b, n=3):
                 continue
             if tag == 'replace':
                 for i in range(0,min(i2-i1,j2-j1)):
-                    match = re.match(a[i1], b[j1])
+                    match = re.match('^' + a[i1] + '$', b[j1])
                     groups_match = True
                     groupdict = {}
                     if match:
